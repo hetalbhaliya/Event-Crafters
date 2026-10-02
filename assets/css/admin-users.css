@@ -1,0 +1,480 @@
+/* =========================================
+   ADMIN USERS MANAGEMENT
+========================================= */
+
+.admin-users-section {
+    min-height: 80vh;
+    padding: 60px 20px;
+    background: #0b1020;
+}
+
+.admin-users-container {
+    width: 92%;
+    max-width: 1250px;
+    margin: auto;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.admin-users-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.admin-users-heading span {
+    display: block;
+    color: #35d6ff;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.admin-users-heading h1 {
+    margin: 0;
+    color: #ffffff;
+    font-family: "Cinzel", serif;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.admin-users-heading p {
+    margin-top: 12px;
+    color: #aeb6c7;
+    font-size: 15px;
+}
+
+
+/* =========================================
+   SUCCESS MESSAGE
+========================================= */
+
+.user-success {
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 14px 18px;
+    background: rgba(53, 214, 255, 0.08);
+    border: 1px solid rgba(53, 214, 255, 0.25);
+    border-radius: 10px;
+    color: #35d6ff;
+    font-size: 14px;
+}
+
+.user-success i {
+    margin-right: 8px;
+}
+
+
+/* =========================================
+   USERS CARD
+========================================= */
+
+.users-list-card {
+    background: rgba(18, 26, 45, 0.95);
+    border: 1px solid #26324a;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================================
+   CARD HEADING
+========================================= */
+
+.users-card-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 28px;
+    border-bottom: 1px solid #26324a;
+}
+
+.users-card-heading span {
+    color: #35d6ff;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.users-card-heading h2 {
+    margin: 6px 0 0;
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   USERS COUNT
+========================================= */
+
+.users-count {
+    min-width: 50px;
+    height: 50px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    background: rgba(53, 214, 255, 0.10);
+    border: 1px solid rgba(53, 214, 255, 0.25);
+    border-radius: 10px;
+
+    color: #35d6ff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.users-count i {
+    font-size: 15px;
+}
+
+
+/* =========================================
+   TABLE WRAPPER
+========================================= */
+
+.users-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.users-table {
+    width: 100%;
+    min-width: 850px;
+    border-collapse: collapse;
+}
+
+
+/* =========================================
+   TABLE HEADER
+========================================= */
+
+.users-table thead {
+    background: #11192b;
+}
+
+.users-table th {
+    padding: 17px 20px;
+    text-align: left;
+
+    color: #8f9bb2;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+
+    border-bottom: 1px solid #26324a;
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   TABLE BODY
+========================================= */
+
+.users-table td {
+    padding: 17px 20px;
+
+    color: #d9deea;
+    font-size: 14px;
+
+    border-bottom: 1px solid rgba(38, 50, 74, 0.65);
+    vertical-align: middle;
+}
+
+.users-table tbody tr {
+    transition: 0.25s ease;
+}
+
+.users-table tbody tr:hover {
+    background: rgba(53, 214, 255, 0.035);
+}
+
+.users-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* =========================================
+   USER NAME
+========================================= */
+
+.user-name {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 180px;
+}
+
+.user-icon {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background: rgba(53, 214, 255, 0.10);
+    border: 1px solid rgba(53, 214, 255, 0.20);
+    border-radius: 50%;
+
+    color: #35d6ff;
+}
+
+.user-name span {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+
+/* =========================================
+   EMAIL
+========================================= */
+
+.users-table td:nth-child(3) {
+    color: #aeb6c7;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+.users-table td:nth-child(4) {
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   DELETE BUTTON
+========================================= */
+
+.user-delete-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+    padding: 8px 13px;
+
+    background: rgba(255, 80, 80, 0.08);
+    border: 1px solid rgba(255, 80, 80, 0.22);
+    border-radius: 7px;
+
+    color: #ff7070;
+    text-decoration: none;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    transition: 0.25s ease;
+}
+
+.user-delete-btn:hover {
+    background: rgba(255, 80, 80, 0.15);
+    border-color: #ff7070;
+    color: #ff8585;
+    text-decoration: none;
+}
+
+
+/* =========================================
+   EMPTY USERS
+========================================= */
+
+.users-empty {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.users-empty i {
+    margin-bottom: 15px;
+    color: #35d6ff;
+    font-size: 42px;
+}
+
+.users-empty h3 {
+    margin: 0 0 8px;
+    color: #ffffff;
+    font-size: 21px;
+}
+
+.users-empty p {
+    margin: 0;
+    color: #8f9bb2;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .admin-users-section {
+        padding: 45px 15px;
+    }
+
+    .admin-users-container {
+        width: 100%;
+    }
+
+    .admin-users-heading h1 {
+        font-size: 30px;
+    }
+
+    .users-card-heading {
+        padding: 20px;
+    }
+
+    .users-table th,
+    .users-table td {
+        padding: 14px 15px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .admin-users-heading h1 {
+        font-size: 26px;
+    }
+
+    .admin-users-heading p {
+        font-size: 13px;
+    }
+
+    .users-card-heading h2 {
+        font-size: 20px;
+    }
+
+    .users-count {
+        min-width: 44px;
+        height: 44px;
+    }
+
+}
+/* =========================================
+   MOBILE TABLE FIX
+========================================= */
+
+@media (max-width: 600px) {
+
+    .users-table-wrapper {
+        overflow-x: hidden;
+    }
+
+    .users-table {
+        min-width: 0;
+        width: 100%;
+        table-layout: fixed;
+    }
+
+    .users-table th,
+    .users-table td {
+        padding: 12px 8px;
+        font-size: 11px;
+    }
+
+    /* Column widths */
+
+    .users-table th:nth-child(1),
+    .users-table td:nth-child(1) {
+        width: 8%;
+    }
+
+    .users-table th:nth-child(2),
+    .users-table td:nth-child(2) {
+        width: 32%;
+    }
+
+    .users-table th:nth-child(3),
+    .users-table td:nth-child(3) {
+        width: 30%;
+    }
+
+    .users-table th:nth-child(4),
+    .users-table td:nth-child(4) {
+        width: 30%;
+    }
+
+    /* Hide less important columns on mobile */
+
+    .users-table th:nth-child(5),
+    .users-table td:nth-child(5),
+    .users-table th:nth-child(6),
+    .users-table td:nth-child(6) {
+        display: none;
+    }
+
+    .user-name {
+        min-width: 0;
+        gap: 6px;
+    }
+
+    .user-icon {
+        width: 30px;
+        height: 30px;
+        font-size: 11px;
+    }
+
+    .user-name span {
+        font-size: 11px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .users-table td:nth-child(3) {
+        word-break: break-word;
+    }
+
+    .users-table td:nth-child(4) {
+        white-space: normal;
+        word-break: break-word;
+    }
+
+}
+/* =========================================
+   BACK BUTTON
+========================================= */
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    color: #35d6ff;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.back-btn:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.back-btn i {
+    font-size: 13px;
+}

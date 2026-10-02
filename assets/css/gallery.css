@@ -1,0 +1,392 @@
+/* =========================================
+   GALLERY PAGE
+========================================= */
+
+.gallery-header {
+    padding: 75px 5% 40px;
+    text-align: center;
+}
+
+.gallery-header h1 {
+    margin: 0 0 12px;
+    font-family: "Cinzel", serif;
+    font-size: 42px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+.gallery-header p {
+    margin: 0;
+    color: #aeb5c7;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+}
+
+
+/* =========================================
+   GALLERY SECTION
+========================================= */
+
+.gallery-section {
+    padding: 10px 5% 90px;
+}
+
+.gallery-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+}
+
+
+/* =========================================
+   GALLERY ITEM
+========================================= */
+
+.gallery-item {
+    position: relative;
+
+    width: 100%;
+    height: 320px;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    background: #11182b;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.18);
+
+    cursor: pointer;
+
+    transition:
+        transform 0.4s ease,
+        border-color 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gallery-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition:
+        transform 0.6s ease,
+        filter 0.6s ease;
+}
+
+
+/* =========================================
+   IMAGE DARK GRADIENT
+========================================= */
+
+.gallery-item::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 55%;
+
+    background: linear-gradient(
+        to top,
+        rgba(5, 8, 20, 0.9),
+        rgba(5, 8, 20, 0.35),
+        transparent
+    );
+
+    pointer-events: none;
+
+    opacity: 0.9;
+
+    transition: opacity 0.4s ease;
+}
+
+
+/* =========================================
+   OVERLAY
+========================================= */
+
+.gallery-overlay {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: 2;
+
+    padding: 55px 22px 22px;
+
+    background: linear-gradient(
+        to top,
+        rgba(5, 8, 20, 0.96),
+        rgba(5, 8, 20, 0.65),
+        transparent
+    );
+
+    transform: translateY(18px);
+
+    opacity: 0;
+
+    transition:
+        transform 0.4s ease,
+        opacity 0.4s ease;
+}
+
+.gallery-overlay h3 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family: "Cinzel", serif;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================================
+   HOVER EFFECT
+========================================= */
+
+.gallery-item:hover {
+    transform: translateY(-8px);
+
+    border-color: rgba(53, 214, 255, 0.75);
+
+    box-shadow:
+        0 18px 45px rgba(0, 0, 0, 0.35),
+        0 0 25px rgba(53, 214, 255, 0.12);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+
+    filter: brightness(0.82);
+}
+
+.gallery-item:hover::after {
+    opacity: 0.6;
+}
+
+.gallery-item:hover .gallery-overlay {
+    transform: translateY(0);
+
+    opacity: 1;
+}
+
+
+/* =========================================
+   GALLERY IMAGE TOP SHINE
+========================================= */
+
+.gallery-item::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -100%;
+
+    z-index: 3;
+
+    width: 45%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.12),
+        transparent
+    );
+
+    transform: skewX(-20deg);
+
+    transition: left 0.7s ease;
+
+    pointer-events: none;
+}
+
+.gallery-item:hover::before {
+    left: 130%;
+}
+
+
+/* =========================================
+   NO GALLERY
+========================================= */
+
+.no-gallery {
+    grid-column: 1 / -1;
+
+    text-align: center;
+
+    padding: 90px 20px;
+}
+
+.no-gallery i {
+    display: block;
+
+    margin-bottom: 20px;
+
+    color: #35d6ff;
+
+    font-size: 45px;
+}
+
+.no-gallery h3 {
+    margin: 0 0 10px;
+
+    color: #ffffff;
+
+    font-family: "Cinzel", serif;
+
+    font-size: 24px;
+}
+
+.no-gallery p {
+    margin: 0;
+
+    color: #8992a8;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   LARGE SCREEN
+========================================= */
+
+@media (min-width: 1400px) {
+
+    .gallery-container {
+        gap: 30px;
+    }
+
+    .gallery-item {
+        height: 340px;
+    }
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 992px) {
+
+    .gallery-header {
+        padding: 65px 5% 35px;
+    }
+
+    .gallery-header h1 {
+        font-size: 38px;
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 22px;
+    }
+
+    .gallery-item {
+        height: 300px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 576px) {
+
+    .gallery-header {
+        padding: 50px 5% 28px;
+    }
+
+    .gallery-header h1 {
+        font-size: 31px;
+        letter-spacing: 0.5px;
+    }
+
+    .gallery-header p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .gallery-section {
+        padding: 5px 5% 65px;
+    }
+
+    .gallery-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .gallery-item {
+        height: 275px;
+        border-radius: 16px;
+    }
+
+    .gallery-overlay {
+        padding: 45px 18px 18px;
+
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .gallery-overlay h3 {
+        font-size: 17px;
+    }
+
+    .gallery-item:hover {
+        transform: translateY(-5px);
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+    .gallery-header h1 {
+        font-size: 28px;
+    }
+
+    .gallery-item {
+        height: 250px;
+    }
+}

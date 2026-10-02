@@ -1,0 +1,258 @@
+/* =========================================
+   FOOD SECTION
+========================================= */
+
+.food-section {
+    padding: 60px 20px;
+    background: #0b1020;
+    min-height: 70vh;
+}
+
+.food-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.food-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.food-heading span {
+    color: #35d6ff;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.food-heading h1 {
+    margin: 10px 0;
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.food-heading p {
+    color: #aeb6c7;
+    font-size: 16px;
+}
+
+
+/* =========================================
+   FOOD GRID
+========================================= */
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+/* =========================================
+   FOOD CARD
+========================================= */
+
+.food-card {
+    background: #121a2d;
+    border: 1px solid #26324a;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.food-card:hover {
+    transform: translateY(-6px);
+    border-color: #35d6ff;
+}
+
+
+/* =========================================
+   FOOD IMAGE
+========================================= */
+
+.food-image {
+    width: 100%;
+    height: 210px;
+    overflow: hidden;
+    position: relative;
+}
+
+.food-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.4s ease;
+}
+
+.food-card:hover .food-image img {
+    transform: scale(1.05);
+}
+
+
+/* =========================================
+   FOOD BODY
+========================================= */
+
+.food-body {
+    padding: 22px;
+}
+
+.food-body h3 {
+    color: #ffffff;
+    font-size: 21px;
+    margin: 0 0 10px;
+}
+
+.food-description {
+    color: #aeb6c7;
+    font-size: 14px;
+    line-height: 1.6;
+    min-height: 45px;
+}
+
+
+/* =========================================
+   PRICE
+========================================= */
+
+.food-price {
+    color: #35d6ff;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 18px 0;
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+.food-status {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.food-status.active {
+    background: rgba(53, 214, 255, 0.12);
+    color: #35d6ff;
+}
+
+.food-status.inactive {
+    background: rgba(255, 80, 80, 0.12);
+    color: #ff7070;
+}
+
+
+/* =========================================
+   FOOD BUTTON
+========================================= */
+
+.food-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    background: #35d6ff;
+    color: #07101c;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.food-btn:hover {
+    background: #ffffff;
+    color: #07101c;
+    text-decoration: none;
+}
+
+
+/* =========================================
+   EMPTY FOOD
+========================================= */
+
+.empty-food {
+    text-align: center;
+    padding: 70px 20px;
+    background: #121a2d;
+    border: 1px solid #26324a;
+    border-radius: 14px;
+}
+
+.empty-food i {
+    font-size: 45px;
+    color: #35d6ff;
+    margin-bottom: 15px;
+}
+
+.empty-food h2 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.empty-food p {
+    color: #aeb6c7;
+}
+
+
+/* =========================================
+   BACK BUTTON
+========================================= */
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 25px 5%;
+    color: #35d6ff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.back-btn:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .food-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .food-section {
+        padding: 40px 15px;
+    }
+
+    .food-container {
+        width: 100%;
+    }
+
+    .food-heading h1 {
+        font-size: 30px;
+    }
+
+    .food-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

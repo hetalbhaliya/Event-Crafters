@@ -1,0 +1,485 @@
+/* =========================================
+   EVENT REVIEWS PAGE
+========================================= */
+
+.event-reviews-page {
+    min-height: calc(100vh - 160px);
+    padding: 30px 20px 70px;
+
+    background: #0b1020;
+    color: #ffffff;
+}
+
+.event-reviews-container {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+}
+
+
+/* =========================================
+   EVENT HEADER
+========================================= */
+
+.reviews-event-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    padding: 22px;
+
+    background: #0f182d;
+
+    border: 1px solid #1a304b;
+    border-radius: 15px;
+
+    margin-bottom: 15px;
+}
+
+.reviews-event-image {
+    width: 125px;
+    height: 90px;
+
+    flex-shrink: 0;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    border: 1px solid #263d59;
+
+    background: #0a1428;
+}
+
+.reviews-event-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.reviews-no-image {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #35d6ff;
+
+    font-size: 28px;
+}
+
+.reviews-event-info span {
+    color: #35d6ff;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 9px;
+    font-weight: 600;
+
+    text-transform: uppercase;
+}
+
+.reviews-event-info h1 {
+    margin: 5px 0;
+
+    color: #ffffff;
+
+    font-family: "Cinzel", serif;
+
+    font-size: 25px;
+}
+
+.reviews-event-info p {
+    margin: 0;
+
+    color: #7887a5;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 10px;
+}
+
+
+/* =========================================
+   RATING SUMMARY
+========================================= */
+
+.rating-summary {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    padding: 22px;
+
+    margin-bottom: 15px;
+
+    background: #0f182d;
+
+    border: 1px solid #1a304b;
+    border-radius: 15px;
+}
+
+.rating-score {
+    min-width: 125px;
+
+    text-align: center;
+
+    padding-right: 25px;
+
+    border-right: 1px solid #1a304b;
+}
+
+.rating-score strong {
+    display: block;
+
+    color: #ffffff;
+
+    font-family: "Cinzel", serif;
+
+    font-size: 32px;
+}
+
+.summary-stars {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+
+    margin: 4px 0;
+}
+
+.summary-stars i {
+    color: #35d6ff;
+    font-size: 11px;
+}
+
+.rating-score small {
+    color: #7887a5;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 9px;
+}
+
+.rating-summary-text h2 {
+    margin: 0 0 5px;
+
+    color: #ffffff;
+
+    font-family: "Cinzel", serif;
+
+    font-size: 19px;
+}
+
+.rating-summary-text p {
+    margin: 0;
+
+    color: #7887a5;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 10px;
+}
+
+
+/* =========================================
+   REVIEW LIST
+========================================= */
+
+.reviews-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+/* =========================================
+   CUSTOMER REVIEW
+========================================= */
+
+.customer-review-card {
+    padding: 18px;
+
+    background: #0f182d;
+
+    border: 1px solid #1a304b;
+    border-radius: 12px;
+
+    transition: 0.25s ease;
+}
+
+.customer-review-card:hover {
+    border-color: rgba(53, 214, 255, 0.5);
+
+    box-shadow:
+        0 0 20px rgba(53, 214, 255, 0.05);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   REVIEW TOP
+========================================= */
+
+.review-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 12px;
+}
+
+.review-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.review-avatar {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(113, 60, 255, 0.35),
+            rgba(53, 214, 255, 0.15)
+        );
+
+    border: 1px solid rgba(53, 214, 255, 0.25);
+
+    color: #35d6ff;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.review-user strong {
+    display: block;
+
+    color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 11px;
+}
+
+.review-user small {
+    display: block;
+
+    margin-top: 2px;
+
+    color: #647792;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 8px;
+}
+
+
+/* =========================================
+   CUSTOMER STARS
+========================================= */
+
+.customer-stars {
+    display: flex;
+    gap: 3px;
+}
+
+.customer-stars i {
+    color: #35d6ff;
+
+    font-size: 10px;
+}
+
+
+/* =========================================
+   REVIEW TEXT
+========================================= */
+
+.review-text {
+    padding-top: 12px;
+
+    border-top: 1px solid #172942;
+
+    color: #aebbd0;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 10px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   NO REVIEWS
+========================================= */
+
+.no-reviews {
+    padding: 55px 20px;
+
+    text-align: center;
+
+    background: #0f182d;
+
+    border: 1px solid #1a304b;
+    border-radius: 15px;
+}
+
+.no-reviews-icon {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 15px;
+
+    border-radius: 50%;
+
+    color: #35d6ff;
+
+    background: rgba(53, 214, 255, 0.07);
+
+    border: 1px solid rgba(53, 214, 255, 0.2);
+
+    font-size: 25px;
+}
+
+.no-reviews h2 {
+    margin: 0 0 7px;
+
+    color: #ffffff;
+
+    font-family: "Cinzel", serif;
+
+    font-size: 20px;
+}
+
+.no-reviews p {
+    margin: 0;
+
+    color: #7887a5;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 10px;
+}
+
+.write-review-btn {
+    display: inline-flex;
+
+    align-items: center;
+    gap: 7px;
+
+    margin-top: 18px;
+
+    padding: 10px 17px;
+
+    border: 1px solid #35d6ff;
+    border-radius: 8px;
+
+    color: #35d6ff;
+
+    background: rgba(53, 214, 255, 0.07);
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: 0.25s ease;
+}
+
+.write-review-btn:hover {
+    color: #ffffff;
+
+    background: #35d6ff;
+
+    text-decoration: none;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .event-reviews-page {
+        padding: 20px 14px 50px;
+    }
+
+    .reviews-event-header {
+        padding: 15px;
+        gap: 12px;
+    }
+
+    .reviews-event-image {
+        width: 90px;
+        height: 70px;
+    }
+
+    .reviews-event-info h1 {
+        font-size: 18px;
+    }
+
+    .reviews-event-info p {
+        font-size: 8px;
+    }
+
+    .rating-summary {
+        gap: 15px;
+        padding: 16px;
+    }
+
+    .rating-score {
+        min-width: 90px;
+        padding-right: 15px;
+    }
+
+    .rating-score strong {
+        font-size: 25px;
+    }
+
+    .rating-summary-text h2 {
+        font-size: 16px;
+    }
+
+    .rating-summary-text p {
+        font-size: 8px;
+    }
+
+    .customer-review-card {
+        padding: 14px;
+    }
+
+    .review-top {
+        align-items: flex-start;
+    }
+
+    .customer-stars {
+        margin-top: 5px;
+    }
+
+}

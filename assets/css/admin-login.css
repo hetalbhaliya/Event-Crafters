@@ -1,0 +1,305 @@
+/* =========================================
+   ADMIN LOGIN
+========================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+
+    background:#080d18;
+
+    color:#ffffff;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+}
+
+
+/* =========================================
+   LOGIN SECTION
+========================================= */
+
+.admin-login-section{
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    padding:40px 20px;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(53,214,255,.08),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at bottom left,
+            rgba(123,47,247,.10),
+            transparent 35%
+        ),
+        #080d18;
+}
+
+
+/* =========================================
+   LOGIN BOX
+========================================= */
+
+.admin-login-box{
+    width:100%;
+    max-width:450px;
+
+    padding:42px;
+
+    background:#111827;
+
+    border:1px solid
+        rgba(255,255,255,.09);
+
+    border-radius:22px;
+
+    box-shadow:
+        0 25px 70px
+        rgba(0,0,0,.45);
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.admin-login-heading{
+    text-align:center;
+
+    margin-bottom:30px;
+}
+
+.admin-login-heading span{
+    display:block;
+
+    color:#35d6ff;
+
+    font-size:11px;
+
+    font-weight:700;
+
+    letter-spacing:3px;
+
+    margin-bottom:10px;
+}
+
+.admin-login-heading h1{
+    font-family:
+        Georgia,
+        serif;
+
+    font-size:34px;
+
+    margin-bottom:10px;
+
+    color:#ffffff;
+}
+
+.admin-login-heading p{
+    color:#929db2;
+
+    font-size:13px;
+
+    line-height:1.6;
+}
+
+
+/* =========================================
+   MESSAGE
+========================================= */
+
+.admin-login-message{
+    padding:12px 15px;
+
+    margin-bottom:22px;
+
+    border-radius:10px;
+
+    background:
+        rgba(255,70,70,.10);
+
+    border:1px solid
+        rgba(255,70,70,.25);
+
+    color:#ff9b9b;
+
+    text-align:center;
+
+    font-size:13px;
+}
+
+
+/* =========================================
+   FORM GROUP
+========================================= */
+
+.form-group{
+    margin-bottom:20px;
+}
+
+.form-group label{
+    display:block;
+
+    margin-bottom:8px;
+
+    color:#dce2ef;
+
+    font-size:13px;
+
+    font-weight:600;
+}
+
+
+/* =========================================
+   INPUT
+========================================= */
+
+.form-group input{
+    width:100%;
+
+    height:50px;
+
+    padding:0 16px;
+
+    border-radius:11px;
+
+    border:1px solid
+        rgba(255,255,255,.10);
+
+    background:#0b1220;
+
+    color:#ffffff;
+
+    outline:none;
+
+    font-size:14px;
+
+    transition:.3s;
+}
+
+.form-group input::placeholder{
+    color:#68748a;
+}
+
+.form-group input:focus{
+    border-color:#35d6ff;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(53,214,255,.08);
+}
+
+
+/* =========================================
+   LOGIN BUTTON
+========================================= */
+
+.admin-login-btn{
+    width:100%;
+
+    height:52px;
+
+    margin-top:8px;
+
+    border:0;
+
+    border-radius:12px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #7b2ff7,
+            #35d6ff
+        );
+
+    color:#ffffff;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.admin-login-btn:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 12px 28px
+        rgba(53,214,255,.20);
+}
+
+.admin-login-btn i{
+    margin-right:8px;
+}
+
+
+/* =========================================
+   BACK WEBSITE
+========================================= */
+
+.back-website{
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:7px;
+
+    margin-top:25px;
+
+    color:#8e99ae;
+
+    text-decoration:none;
+
+    font-size:13px;
+
+    transition:.3s;
+}
+
+.back-website:hover{
+    color:#35d6ff;
+
+    text-decoration:none;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media(max-width:500px){
+
+    .admin-login-section{
+        padding:25px 15px;
+    }
+
+    .admin-login-box{
+        padding:30px 22px;
+
+        border-radius:18px;
+    }
+
+    .admin-login-heading h1{
+        font-size:28px;
+    }
+
+}

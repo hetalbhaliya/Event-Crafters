@@ -1,0 +1,987 @@
+/* =========================================
+   EVENT CRAFTERS - ADMIN FOOD MANAGEMENT
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   MAIN SECTION
+========================================= */
+
+.admin-food-section {
+    min-height: 100vh;
+    padding: 55px 20px 80px;
+    background: #0b1020;
+    color: #ffffff;
+}
+
+.admin-food-container {
+    width: 92%;
+    max-width: 1250px;
+    margin: auto;
+}
+
+
+/* =========================================
+   PAGE HEADING
+========================================= */
+
+.admin-food-heading {
+    margin-bottom: 35px;
+}
+
+.admin-food-heading span {
+    display: block;
+    margin-bottom: 8px;
+
+    color: #35d6ff;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+.admin-food-heading h1 {
+    margin: 0 0 10px;
+
+    color: #ffffff;
+
+    font-family: 'Cinzel', serif;
+
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.admin-food-heading p {
+    margin: 0;
+
+    color: #9faabe;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   MESSAGE
+========================================= */
+
+.admin-food-message {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 13px 17px;
+
+    margin-bottom: 25px;
+
+    border-radius: 9px;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.admin-food-message.success {
+    background: rgba(40, 200, 130, 0.10);
+    border: 1px solid rgba(40, 200, 130, 0.25);
+    color: #49d99a;
+}
+
+.admin-food-message.error {
+    background: rgba(255, 80, 100, 0.10);
+    border: 1px solid rgba(255, 80, 100, 0.25);
+    color: #ff7180;
+}
+
+
+/* =========================================
+   COMMON CARD
+========================================= */
+
+.food-add-card,
+.food-list-card {
+    background: #11192d;
+
+    border: 1px solid #26334d;
+
+    border-radius: 18px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.22);
+}
+
+
+/* =========================================
+   ADD FOOD CARD
+========================================= */
+
+.food-add-card {
+    padding: 30px;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================================
+   CARD HEADING
+========================================= */
+
+.food-card-heading {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 18px;
+    margin-bottom: 25px;
+
+    border-bottom: 1px solid #253149;
+}
+
+.food-card-heading span {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #35d6ff;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.food-card-heading h2 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family: 'Cinzel', serif;
+
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.food-card-heading > i {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: rgba(53, 214, 255, 0.08);
+
+    color: #35d6ff;
+
+    font-size: 18px;
+}
+
+
+/* =========================================
+   FOOD FORM
+========================================= */
+
+.food-form {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 22px;
+}
+
+.food-form-group {
+    width: 100%;
+}
+
+.food-form-group:nth-child(2) {
+    grid-column: 1 / -1;
+}
+
+.food-form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #dbe2ef;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.food-form-group input,
+.food-form-group textarea {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    background: #0b1020;
+
+    color: #ffffff;
+
+    border: 1px solid #2b3955;
+
+    border-radius: 9px;
+
+    outline: none;
+
+    font-size: 13px;
+
+    transition: 0.3s ease;
+}
+
+.food-form-group textarea {
+    min-height: 110px;
+
+    resize: vertical;
+}
+
+.food-form-group input:focus,
+.food-form-group textarea:focus {
+    border-color: #35d6ff;
+
+    box-shadow:
+        0 0 0 3px rgba(53, 214, 255, 0.08);
+}
+
+.food-form-group input::placeholder,
+.food-form-group textarea::placeholder {
+    color: #68748a;
+}
+
+
+/* =========================================
+   FILE INPUT
+========================================= */
+
+.food-form-group input[type="file"] {
+    padding: 9px;
+
+    cursor: pointer;
+}
+
+.food-form-group input[type="file"]::file-selector-button {
+    padding: 8px 13px;
+
+    margin-right: 10px;
+
+    background: #18243a;
+
+    color: #35d6ff;
+
+    border: 1px solid #30415f;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.food-form-group small {
+    display: block;
+
+    margin-top: 7px;
+
+    color: #727e94;
+
+    font-size: 11px;
+}
+
+
+/* =========================================
+   FORM ACTION
+========================================= */
+
+.food-form-actions {
+    grid-column: 1 / -1;
+
+    margin-top: 2px;
+}
+
+.add-food-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 12px 24px;
+
+    background: linear-gradient(
+        135deg,
+        #7b2ff7,
+        #35d6ff
+    );
+
+    color: #ffffff;
+
+    border: none;
+
+    border-radius: 9px;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.add-food-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 22px rgba(53, 214, 255, 0.18);
+}
+
+
+/* =========================================
+   FOOD LIST CARD
+========================================= */
+
+.food-list-card {
+    padding: 30px;
+}
+
+
+/* =========================================
+   TABLE WRAPPER
+========================================= */
+
+.food-table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+
+    border: 1px solid #26334d;
+
+    border-radius: 12px;
+
+    background: #0e1628;
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.food-table {
+    width: 100%;
+
+    min-width: 1000px;
+
+    border-collapse: collapse;
+
+    table-layout: fixed;
+}
+
+
+/* =========================================
+   COLUMN WIDTH
+========================================= */
+
+.food-table th:nth-child(1),
+.food-table td:nth-child(1) {
+    width: 135px;
+}
+
+.food-table th:nth-child(2),
+.food-table td:nth-child(2) {
+    width: 150px;
+}
+
+.food-table th:nth-child(3),
+.food-table td:nth-child(3) {
+    width: 300px;
+}
+
+.food-table th:nth-child(4),
+.food-table td:nth-child(4) {
+    width: 110px;
+}
+
+.food-table th:nth-child(5),
+.food-table td:nth-child(5) {
+    width: 110px;
+}
+
+.food-table th:nth-child(6),
+.food-table td:nth-child(6) {
+    width: 250px;
+}
+
+
+/* =========================================
+   TABLE HEADER
+========================================= */
+
+.food-table thead {
+    background: #151f35;
+}
+
+.food-table th {
+    padding: 16px 14px;
+
+    color: #aeb9cc;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    text-align: left;
+
+    letter-spacing: 0.4px;
+
+    white-space: nowrap;
+
+    border-bottom: 1px solid #293650;
+}
+
+
+/* =========================================
+   TABLE BODY
+========================================= */
+
+.food-table td {
+    padding: 16px 14px;
+
+    color: #d7deeb;
+
+    font-size: 12px;
+
+    vertical-align: middle;
+
+    border-bottom: 1px solid #202c43;
+}
+
+.food-table tbody tr {
+    transition: 0.25s ease;
+}
+
+.food-table tbody tr:hover {
+    background: rgba(53, 214, 255, 0.035);
+}
+
+.food-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* =========================================
+   FOOD IMAGE
+========================================= */
+
+.food-table-image {
+    width: 100px;
+    height: 70px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 9px;
+
+    border: 1px solid #30405d;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================================
+   NO IMAGE
+========================================= */
+
+.food-no-image {
+    width: 100px;
+    height: 70px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #172239;
+
+    border: 1px solid #30405d;
+
+    border-radius: 9px;
+
+    color: #64748b;
+
+    font-size: 22px;
+}
+
+
+/* =========================================
+   FOOD NAME
+========================================= */
+
+.food-table td:nth-child(2) strong {
+    display: block;
+
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.food-table .food-description {
+    margin: 0;
+
+    color: #9ca8ba;
+
+    font-size: 11px;
+
+    line-height: 1.6;
+
+    word-break: break-word;
+}
+
+
+/* =========================================
+   PRICE
+========================================= */
+
+.food-table .food-price {
+    color: #35d6ff;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   ACTIVE STATUS
+========================================= */
+
+.food-active,
+.food-inactive {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+.food-active {
+    background: rgba(48, 210, 145, 0.10);
+
+    color: #48d99b;
+
+    border: 1px solid rgba(48, 210, 145, 0.18);
+}
+
+.food-inactive {
+    background: rgba(255, 90, 105, 0.10);
+
+    color: #ff7180;
+
+    border: 1px solid rgba(255, 90, 105, 0.18);
+}
+
+.food-active i,
+.food-inactive i {
+    font-size: 6px;
+}
+
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.food-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   ALL ACTION BUTTONS
+========================================= */
+
+.food-actions a {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+
+    min-height: 32px;
+
+    padding: 7px 10px;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    transition: 0.25s ease;
+}
+
+
+/* =========================================
+   TOGGLE
+========================================= */
+
+.food-toggle-btn {
+    background: rgba(255, 193, 7, 0.08);
+
+    color: #ffc107;
+
+    border: 1px solid rgba(255, 193, 7, 0.20);
+}
+
+.food-toggle-btn:hover {
+    background: #ffc107;
+
+    color: #111827;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   EDIT
+========================================= */
+
+.food-edit-btn {
+    background: rgba(123, 47, 247, 0.09);
+
+    color: #a875ff;
+
+    border: 1px solid rgba(123, 47, 247, 0.22);
+}
+
+.food-edit-btn:hover {
+    background: #7b2ff7;
+
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   DELETE
+========================================= */
+
+.food-delete-btn {
+    background: rgba(255, 77, 109, 0.08);
+
+    color: #ff7180;
+
+    border: 1px solid rgba(255, 77, 109, 0.20);
+}
+
+.food-delete-btn:hover {
+    background: #ff4d6d;
+
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   EMPTY FOOD
+========================================= */
+
+.food-empty {
+    text-align: center;
+
+    padding: 65px 20px;
+}
+
+.food-empty > div {
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 18px;
+
+    background: rgba(53, 214, 255, 0.07);
+
+    border: 1px solid rgba(53, 214, 255, 0.15);
+
+    border-radius: 50%;
+}
+
+.food-empty i {
+    color: #35d6ff;
+
+    font-size: 28px;
+}
+
+.food-empty h3 {
+    margin: 0 0 8px;
+
+    color: #ffffff;
+
+    font-family: 'Cinzel', serif;
+
+    font-size: 22px;
+}
+
+.food-empty p {
+    margin: 0;
+
+    color: #8994a8;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .admin-food-container {
+        width: 96%;
+    }
+
+    .food-form {
+        grid-template-columns: 1fr;
+    }
+
+    .food-form-group:nth-child(2),
+    .food-form-actions {
+        grid-column: auto;
+    }
+
+    .food-add-card,
+    .food-list-card {
+        padding: 22px;
+    }
+
+    .admin-food-heading h1 {
+        font-size: 32px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .admin-food-section {
+        padding: 35px 10px 60px;
+    }
+
+    .admin-food-container {
+        width: 100%;
+    }
+
+    .admin-food-heading h1 {
+        font-size: 27px;
+    }
+
+    .admin-food-heading p {
+        font-size: 12px;
+    }
+
+    .food-add-card,
+    .food-list-card {
+        padding: 18px;
+        border-radius: 14px;
+    }
+
+    .food-card-heading h2 {
+        font-size: 20px;
+    }
+
+    .food-table {
+        min-width: 1000px;
+    }
+
+}
+/* =========================================
+   BACK BUTTON
+========================================= */
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    color: #35d6ff;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.back-btn:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.back-btn i {
+    font-size: 13px;
+}
+/* =========================================
+   CANCEL BUTTON - SAME AS UPDATE STYLE
+========================================= */
+
+.cancel-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 13px 28px;
+
+    background: linear-gradient(
+        135deg,
+        #ff4d6d,
+        #ff6b35
+    );
+
+    color: #ffffff;
+
+    border: none;
+    border-radius: 10px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+
+    text-decoration: none;
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 18px rgba(255, 77, 109, 0.25);
+
+    transition: all 0.3s ease;
+}
+
+
+/* ICON */
+
+.cancel-btn i {
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
+
+/* HOVER */
+
+.cancel-btn:hover {
+    color: #ffffff;
+    text-decoration: none;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 25px rgba(255, 77, 109, 0.40);
+}
+
+
+/* ICON HOVER */
+
+.cancel-btn:hover i {
+    transform: rotate(90deg);
+}
+
+
+/* CLICK */
+
+.cancel-btn:active {
+    transform: translateY(0);
+}
+
+/* =========================================
+   ACTIVE STATUS CHECKBOX
+========================================= */
+
+.food-status-check {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin: 0;
+    padding: 0;
+
+    cursor: pointer;
+}
+
+
+/* CHECKBOX */
+
+.food-status-check input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+
+    margin: 0;
+    padding: 0;
+
+    flex-shrink: 0;
+
+    cursor: pointer;
+
+    position: relative;
+    top: 0;
+}
+
+
+/* TEXT */
+
+.food-status-check span {
+    display: inline-flex;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+
+    line-height: 17px;
+
+    cursor: pointer;
+}

@@ -1,0 +1,6 @@
+.env
+test_db.php
+.vscode/
+.DS_Store
+Thumbs.db
+*.log

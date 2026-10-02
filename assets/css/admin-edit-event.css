@@ -1,0 +1,623 @@
+/* =========================================
+   ADMIN EDIT EVENT
+========================================= */
+
+.admin-edit-event-section {
+    min-height: calc(100vh - 80px);
+    padding: 45px 6% 80px;
+    background: #0b1020;
+}
+
+.admin-edit-event-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   BACK BUTTON
+========================================= */
+
+.admin-back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    margin: 30px 6% 10px;
+
+    color: #35d6ff;
+    text-decoration: none;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.admin-back-btn:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.admin-back-btn i {
+    transition: transform 0.3s ease;
+}
+
+.admin-back-btn:hover i {
+    transform: translateX(-4px);
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.admin-edit-event-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.admin-edit-event-heading span {
+    display: inline-block;
+
+    margin-bottom: 10px;
+
+    color: #35d6ff;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+.admin-edit-event-heading h1 {
+    margin: 0 0 10px;
+
+    color: #ffffff;
+
+    font-family: "Cinzel", serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.admin-edit-event-heading p {
+    margin: 0;
+
+    color: #8992a8;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   MESSAGE
+========================================= */
+
+.admin-event-message {
+    width: 100%;
+
+    padding: 14px 18px;
+
+    margin-bottom: 22px;
+
+    border-radius: 12px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.admin-event-message.success {
+    color: #7fffd4;
+
+    background: rgba(0, 255, 170, 0.08);
+
+    border: 1px solid rgba(0, 255, 170, 0.25);
+}
+
+.admin-event-message.error {
+    color: #ff9eae;
+
+    background: rgba(255, 70, 100, 0.08);
+
+    border: 1px solid rgba(255, 70, 100, 0.25);
+}
+
+
+/* =========================================
+   FORM CARD
+========================================= */
+
+.admin-edit-event-card {
+    width: 100%;
+
+    padding: 40px 44px;
+
+    background: rgba(17, 24, 43, 0.94);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.35),
+        0 0 40px rgba(155, 93, 229, 0.05);
+}
+
+
+/* =========================================
+   FORM GROUP
+========================================= */
+
+.form-group {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 9px;
+
+    color: #f5f7ff;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   INPUT + SELECT
+========================================= */
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    height: 58px;
+
+    padding: 0 18px;
+
+    color: #ffffff;
+
+    background: #0d1425;
+
+    border: 1px solid rgba(255, 255, 255, 0.10);
+
+    border-radius: 12px;
+
+    outline: none;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+
+    transition: all 0.3s ease;
+}
+
+
+/* =========================================
+   PLACEHOLDER
+========================================= */
+
+.form-group input::placeholder {
+    color: #66718b;
+}
+
+
+/* =========================================
+   SELECT FIX
+========================================= */
+
+.form-group select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    cursor: pointer;
+
+    padding-right: 48px;
+
+    background-color: #0d1425;
+
+    background-image:
+        linear-gradient(
+            45deg,
+            transparent 50%,
+            #35d6ff 50%
+        ),
+        linear-gradient(
+            135deg,
+            #35d6ff 50%,
+            transparent 50%
+        );
+
+    background-position:
+        calc(100% - 21px) 25px,
+        calc(100% - 15px) 25px;
+
+    background-size:
+        6px 6px,
+        6px 6px;
+
+    background-repeat: no-repeat;
+}
+
+.form-group select option {
+    color: #ffffff;
+    background: #11182b;
+}
+
+
+/* =========================================
+   INPUT / SELECT FOCUS
+========================================= */
+
+.form-group input:focus,
+.form-group select:focus {
+    color: #ffffff;
+
+    background-color: #0e172a;
+
+    border-color: #35d6ff;
+
+    box-shadow:
+        0 0 0 3px rgba(53, 214, 255, 0.08),
+        0 0 20px rgba(53, 214, 255, 0.08);
+}
+
+
+/* =========================================
+   FORM ROW
+========================================= */
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 24px;
+
+    width: 100%;
+}
+
+
+/* =========================================
+   PRICE
+========================================= */
+
+.price-input {
+    position: relative;
+    width: 100%;
+}
+
+.price-input span {
+    position: absolute;
+
+    left: 18px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #35d6ff;
+
+    font-size: 19px;
+    font-weight: 700;
+
+    z-index: 2;
+}
+
+.price-input input {
+    padding-left: 45px;
+}
+
+
+/* =========================================
+   CURRENT EVENT IMAGE
+========================================= */
+
+.current-event-image {
+    width: 100%;
+    height: 280px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background: #0d1425;
+
+    border: 1px solid rgba(255, 255, 255, 0.10);
+
+    border-radius: 16px;
+}
+
+.current-event-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    display: block;
+
+    /* IMPORTANT: no blur */
+    filter: none;
+
+    image-rendering: auto;
+}
+
+.no-current-image {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    color: #66718b;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+}
+
+.no-current-image i {
+    font-size: 38px;
+    color: #35d6ff;
+}
+
+
+/* =========================================
+   FILE INPUT
+========================================= */
+
+.form-group input[type="file"] {
+    height: auto;
+
+    padding: 15px 16px;
+
+    cursor: pointer;
+
+    color: #aeb5c7;
+
+    background: #0d1425;
+}
+
+.form-group input[type="file"]::file-selector-button {
+    margin-right: 12px;
+
+    padding: 9px 16px;
+
+    color: #ffffff;
+
+    background: linear-gradient(
+        135deg,
+        #9b5de5,
+        #35d6ff
+    );
+
+    border: none;
+    border-radius: 8px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.form-group input[type="file"]::file-selector-button:hover {
+    opacity: 0.9;
+}
+
+.form-group small {
+    display: block;
+
+    margin-top: 8px;
+
+    color: #66718b;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.event-form-buttons {
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 14px;
+
+    margin-top: 32px;
+    padding-top: 28px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+/* =========================================
+   CANCEL
+========================================= */
+
+.cancel-event-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 155px;
+    height: 58px;
+
+    padding: 0 25px;
+
+    color: #b7bfd1;
+
+    background: #11182b;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 12px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.cancel-event-btn:hover {
+    color: #ffffff;
+
+    background: #171f35;
+
+    border-color: rgba(255, 255, 255, 0.25);
+
+    text-decoration: none;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   UPDATE BUTTON
+========================================= */
+
+.save-event-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    min-width: 175px;
+    height: 58px;
+
+    padding: 0 28px;
+
+    color: #ffffff;
+
+    background: linear-gradient(
+        135deg,
+        #9b5de5,
+        #6c5ce7,
+        #35d6ff
+    );
+
+    border: none;
+    border-radius: 12px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 10px 25px rgba(53, 214, 255, 0.12);
+
+    transition: all 0.3s ease;
+}
+
+.save-event-btn:hover {
+    color: #ffffff;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 15px 35px rgba(53, 214, 255, 0.22),
+        0 0 20px rgba(155, 93, 229, 0.18);
+}
+
+.save-event-btn:active {
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .admin-edit-event-section {
+        padding: 35px 5% 60px;
+    }
+
+    .admin-back-btn {
+        margin-left: 5%;
+    }
+
+    .admin-edit-event-heading h1 {
+        font-size: 32px;
+    }
+
+    .admin-edit-event-card {
+        padding: 30px 25px;
+
+        border-radius: 20px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .current-event-image {
+        height: 240px;
+    }
+
+    .event-form-buttons {
+        flex-direction: column-reverse;
+
+        align-items: stretch;
+    }
+
+    .cancel-event-btn,
+    .save-event-btn {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .admin-edit-event-section {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .admin-back-btn {
+        margin-left: 4%;
+    }
+
+    .admin-edit-event-heading h1 {
+        font-size: 28px;
+    }
+
+    .admin-edit-event-card {
+        padding: 25px 18px;
+    }
+
+    .form-group input,
+    .form-group select {
+        height: 54px;
+    }
+
+    .current-event-image {
+        height: 210px;
+    }
+}

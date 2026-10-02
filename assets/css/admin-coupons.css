@@ -1,0 +1,687 @@
+/* =========================================
+   ADMIN COUPONS
+========================================= */
+
+.admin-page {
+    width: 92%;
+    max-width: 1250px;
+    margin: 40px auto 70px;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.admin-page-header {
+    margin-bottom: 30px;
+}
+
+.admin-page-header h1 {
+    margin: 18px 0 6px;
+
+    font-family: "Cinzel", serif;
+    font-size: 32px;
+
+    color: #ffffff;
+}
+
+.admin-page-header p {
+    margin: 0;
+
+    color: #8290ad;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+}
+
+
+
+
+
+/* =========================================
+   SUCCESS / ERROR
+========================================= */
+
+.admin-success,
+.admin-error {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 12px 15px;
+    margin-bottom: 20px;
+
+    border-radius: 9px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+}
+
+.admin-success {
+    background: rgba(53, 214, 255, 0.08);
+    border: 1px solid rgba(53, 214, 255, 0.3);
+    color: #35d6ff;
+}
+
+.admin-error {
+    background: rgba(255, 70, 110, 0.08);
+    border: 1px solid rgba(255, 70, 110, 0.3);
+    color: #ff6b8a;
+}
+
+
+/* =========================================
+   FORM CARD
+========================================= */
+
+.coupon-form-card,
+.coupon-list-card {
+    background: #10182b;
+
+    border: 1px solid rgba(80, 110, 160, 0.25);
+    border-radius: 16px;
+
+    padding: 25px;
+
+    box-shadow:
+        0 15px 45px rgba(0, 0, 0, 0.25);
+}
+
+.coupon-form-card {
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   FORM TITLE
+========================================= */
+
+.coupon-form-title {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    margin-bottom: 25px;
+}
+
+.coupon-title-icon {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: linear-gradient(
+        135deg,
+        #7b4cff,
+        #35d6ff
+    );
+
+    color: #ffffff;
+
+    font-size: 18px;
+}
+
+.coupon-form-title h2,
+.coupon-list-header h2 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family: "Cinzel", serif;
+    font-size: 20px;
+}
+
+.coupon-form-title p,
+.coupon-list-header p {
+    margin: 4px 0 0;
+
+    color: #71809c;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;
+}
+
+
+/* =========================================
+   FORM GRID
+========================================= */
+
+.coupon-form-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 18px;
+}
+
+
+/* =========================================
+   FIELD
+========================================= */
+
+.coupon-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.coupon-field label {
+    margin-bottom: 7px;
+
+    color: #aebbd2;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.coupon-field input,
+.coupon-field select {
+    width: 100%;
+
+    padding: 11px 13px;
+
+    border: 1px solid #263653;
+    border-radius: 8px;
+
+    outline: none;
+
+    background: #0b1222;
+    color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+
+    transition: 0.25s ease;
+}
+
+.coupon-field input:focus,
+.coupon-field select:focus {
+    border-color: #35d6ff;
+
+    box-shadow:
+        0 0 0 2px rgba(53, 214, 255, 0.08);
+}
+
+.coupon-field input::placeholder {
+    color: #53627d;
+}
+
+
+/* =========================================
+   ADD BUTTON
+========================================= */
+
+.add-coupon-btn {
+    margin-top: 22px;
+
+    padding: 11px 19px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: linear-gradient(
+        135deg,
+        #7b4cff,
+        #35d6ff
+    );
+
+    color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.add-coupon-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 22px rgba(53, 214, 255, 0.18);
+}
+
+
+/* =========================================
+   LIST HEADER
+========================================= */
+
+.coupon-list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+}
+
+.coupon-count {
+    padding: 7px 12px;
+
+    border: 1px solid rgba(53, 214, 255, 0.25);
+    border-radius: 20px;
+
+    background: rgba(53, 214, 255, 0.06);
+
+    color: #35d6ff;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.coupon-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.coupon-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    font-family: "Poppins", sans-serif;
+}
+
+.coupon-table th {
+    padding: 13px 10px;
+
+    border-bottom: 1px solid #263653;
+
+    color: #73829f;
+
+    font-size: 10px;
+    font-weight: 500;
+
+    text-align: left;
+    white-space: nowrap;
+}
+
+.coupon-table td {
+    padding: 15px 10px;
+
+    border-bottom: 1px solid rgba(38, 54, 83, 0.55);
+
+    color: #d9e1ef;
+
+    font-size: 11px;
+
+    vertical-align: middle;
+}
+
+.coupon-table tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* =========================================
+   COUPON CODE
+========================================= */
+
+.coupon-code {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    color: #ffffff;
+
+    font-weight: 600;
+}
+
+.coupon-code i {
+    color: #35d6ff;
+}
+
+
+/* =========================================
+   DISCOUNT
+========================================= */
+
+.discount-value {
+    color: #35d6ff;
+}
+
+
+/* =========================================
+   VALIDITY
+========================================= */
+
+.validity {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+    color: #b7c2d5;
+    font-size: 9px;
+}
+
+.validity span {
+    color: #53627d;
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+.coupon-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+
+    padding: 5px 9px;
+
+    border-radius: 20px;
+
+    font-size: 9px;
+
+    text-decoration: none;
+
+    transition: 0.2s ease;
+}
+
+.coupon-status:hover {
+    text-decoration: none;
+    transform: translateY(-1px);
+}
+
+.coupon-status.active {
+    background: rgba(53, 214, 255, 0.08);
+    border: 1px solid rgba(53, 214, 255, 0.3);
+    color: #35d6ff;
+}
+
+.coupon-status.inactive {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid #303c54;
+    color: #71809c;
+}
+
+
+/* =========================================
+   DELETE
+========================================= */
+
+.delete-coupon-btn {
+    width: 32px;
+    height: 32px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255, 80, 110, 0.25);
+    border-radius: 8px;
+
+    background: rgba(255, 80, 110, 0.06);
+
+    color: #ff6685;
+
+    text-decoration: none;
+
+    transition: 0.25s ease;
+}
+
+.delete-coupon-btn:hover {
+    background: rgba(255, 80, 110, 0.14);
+    border-color: #ff6685;
+    color: #ffffff;
+}
+
+
+/* =========================================
+   NO COUPONS
+========================================= */
+
+.no-coupons {
+    padding: 50px 20px !important;
+
+    text-align: center;
+}
+
+.no-coupons i {
+    color: #35d6ff;
+    font-size: 30px;
+}
+
+.no-coupons h3 {
+    margin: 12px 0 5px;
+
+    color: #ffffff;
+
+    font-family: "Cinzel", serif;
+    font-size: 17px;
+}
+
+.no-coupons p {
+    margin: 0;
+
+    color: #71809c;
+
+    font-size: 10px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .admin-page {
+        width: 94%;
+        margin-top: 25px;
+    }
+
+    .coupon-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .coupon-form-card,
+    .coupon-list-card {
+        padding: 18px;
+    }
+
+    .coupon-list-header {
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .admin-page-header h1 {
+        font-size: 25px;
+    }
+
+}
+/* =========================================
+   EDIT COUPON BUTTONS
+========================================= */
+
+.coupon-edit-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+.coupon-edit-actions .add-coupon-btn {
+    margin-top: 0;
+}
+
+
+/* Cancel */
+
+.coupon-cancel-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 18px;
+
+    border: 1px solid #30405d;
+    border-radius: 9px;
+
+    background: rgba(255,255,255,0.03);
+
+    color: #9aa8c0;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+
+    text-decoration: none;
+
+    transition: 0.25s ease;
+}
+
+.coupon-cancel-btn:hover {
+    color: #ffffff;
+
+    border-color: #35d6ff;
+
+    background: rgba(53,214,255,0.07);
+
+    text-decoration: none;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .coupon-edit-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .coupon-edit-actions a,
+    .coupon-edit-actions button {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+/* =========================================
+   COUPON ACTIONS
+========================================= */
+
+.coupon-actions {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+
+/* EDIT */
+
+.edit-coupon-btn {
+    width: 32px;
+    height: 32px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(53, 214, 255, 0.25);
+    border-radius: 8px;
+
+    background: rgba(53, 214, 255, 0.05);
+
+    color: #35d6ff;
+
+    text-decoration: none;
+
+    transition: 0.25s ease;
+}
+
+.edit-coupon-btn:hover {
+    background: rgba(53, 214, 255, 0.14);
+    border-color: #35d6ff;
+    color: #ffffff;
+
+    transform: translateY(-1px);
+}
+
+
+/* DELETE */
+
+.delete-coupon-btn {
+    width: 32px;
+    height: 32px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255, 80, 110, 0.25);
+    border-radius: 8px;
+
+    background: rgba(255, 80, 110, 0.06);
+
+    color: #ff6685;
+
+    text-decoration: none;
+
+    transition: 0.25s ease;
+}
+
+.delete-coupon-btn:hover {
+    background: rgba(255, 80, 110, 0.14);
+    border-color: #ff6685;
+    color: #ffffff;
+}
+
+
+/* =========================================
+   COMMON BACK BUTTON
+========================================= */
+
+.admin-back-btn {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin: 25px 5%;
+
+    padding: 0;
+
+    background: transparent;
+
+    border: none;
+
+    color: #35d6ff;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.admin-back-btn i {
+    color: #35d6ff;
+
+    transition: transform 0.3s ease;
+}
+
+.admin-back-btn:hover {
+    color: #ffffff;
+
+    background: transparent;
+
+    transform: translateX(-4px);
+}
+
+.admin-back-btn:hover i {
+    transform: translateX(-3px);
+}

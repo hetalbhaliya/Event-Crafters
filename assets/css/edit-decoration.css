@@ -1,0 +1,322 @@
+.edit-decoration-page {
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 0 20px 70px;
+}
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 30px;
+    color: #35D6FF;
+    font-weight: 600;
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+.back-btn:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.back-btn i {
+    transition: .3s ease;
+}
+
+.back-btn:hover i {
+    transform: translateX(-4px);
+}
+
+.page-heading {
+    margin-bottom: 30px;
+}
+
+.page-heading h1 {
+    font-family: "Cinzel", serif;
+    color: #ffffff;
+    font-size: 34px;
+    margin-bottom: 8px;
+}
+
+.page-heading p {
+    color: #8f99ad;
+    margin: 0;
+}
+
+.decoration-form-box {
+    background: rgba(17, 24, 43, .88);
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, .18);
+}
+
+.form-group label {
+    color: #dce2ef;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.form-control,
+.form-control:focus {
+    background: #0d1425;
+    border: 1px solid rgba(255, 255, 255, .1);
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+.form-control {
+    height: 46px;
+}
+
+textarea.form-control { 
+    height: 110px;
+    resize: vertical;
+}
+
+.form-control:focus {
+    border-color: #35D6FF;
+}
+
+select.form-control option {
+    background: #0d1425;
+    color: #ffffff;
+}
+
+.status-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #dce2ef;
+    font-size: 14px;
+}
+
+.status-box input {
+    width: 17px;
+    height: 17px;
+    accent-color: #35D6FF;
+}
+
+
+/* =========================
+   CURRENT IMAGE
+========================= */
+
+.current-image-box {
+    width: 100%;
+    max-width: 320px;
+    height: 210px;
+    overflow: hidden;
+    border-radius: 14px;
+    border: 1px solid rgba(53, 214, 255, .2);
+    background: #0d1425;
+}
+
+.current-decoration-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.no-image-box {
+    width: 100%;
+    min-height: 120px;
+    border: 1px dashed rgba(255, 255, 255, .15);
+    border-radius: 14px;
+    background: rgba(13, 20, 37, .7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #8992a8;
+}
+
+.no-image-box i {
+    font-size: 30px;
+    color: #35D6FF;
+}
+
+
+/* =========================
+   IMAGE UPLOAD
+========================= */
+
+.image-upload-box {
+    position: relative;
+    border: 1px dashed rgba(53, 214, 255, .35);
+    border-radius: 14px;
+    background: rgba(13, 20, 37, .7);
+    overflow: hidden;
+    transition: .3s ease;
+}
+
+.image-upload-box:hover {
+    border-color: #35D6FF;
+    box-shadow: 0 0 25px rgba(53, 214, 255, .08);
+}
+
+.image-input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.image-upload-label {
+    min-height: 150px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    margin: 0;
+}
+
+.image-upload-label i {
+    font-size: 35px;
+    color: #35D6FF;
+    margin-bottom: 12px;
+}
+
+.image-upload-label strong {
+    color: #ffffff;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.image-upload-label span {
+    color: #8992a8;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   IMAGE PREVIEW
+========================= */
+
+.image-preview {
+    display: none;
+    margin-top: 15px;
+    max-width: 320px;
+    height: 210px;
+    overflow: hidden;
+    border-radius: 14px;
+    border: 1px solid rgba(155, 93, 229, .3);
+}
+
+.image-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.cancel-btn,
+.update-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.cancel-btn {
+    background: rgba(255, 255, 255, .06);
+    color: #b7c0d1;
+}
+
+.cancel-btn:hover {
+    background: rgba(255, 255, 255, .1);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.update-btn {
+    background: linear-gradient(
+        135deg,
+        #9B5DE5,
+        #35D6FF
+    );
+    color: #ffffff;
+}
+
+.update-btn:hover {
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(53, 214, 255, .2);
+}
+
+
+/* =========================
+   ERROR
+========================= */
+
+.error-message {
+    background: rgba(255, 80, 100, .08);
+    border: 1px solid rgba(255, 80, 100, .2);
+    color: #ff8b9a;
+    padding: 12px 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 576px) {
+
+    .edit-decoration-page {
+        margin-top: 30px;
+    }
+
+    .decoration-form-box {
+        padding: 22px;
+    }
+
+    .page-heading h1 {
+        font-size: 28px;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .cancel-btn,
+    .update-btn {
+        justify-content: center;
+    }
+
+    .current-image-box,
+    .image-preview {
+        max-width: 100%;
+        height: 190px;
+    }
+
+}

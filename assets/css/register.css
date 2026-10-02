@@ -1,0 +1,257 @@
+/* =========================================
+   REGISTER PAGE
+========================================= */
+
+.register-section{
+    min-height:100vh;
+
+    padding:60px 5% 90px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+.register-box{
+    width:100%;
+
+    max-width:500px;
+
+    padding:40px;
+
+    background:#11182b;
+
+    border:1px solid
+        rgba(53,214,255,.12);
+
+    border-radius:22px;
+
+    box-shadow:
+        0 20px 50px
+        rgba(0,0,0,.25);
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.register-heading{
+    text-align:center;
+
+    margin-bottom:30px;
+}
+
+.register-heading span{
+    color:#35d6ff;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    letter-spacing:2px;
+}
+
+.register-heading h1{
+    font-family:'Cinzel',serif;
+
+    font-size:32px;
+
+    margin:10px 0;
+}
+
+.register-heading p{
+    color:#9da6bb;
+
+    font-size:13px;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.form-group{
+    margin-bottom:18px;
+}
+
+.form-group label{
+    display:block;
+
+    margin-bottom:7px;
+
+    color:#ffffff;
+
+    font-size:13px;
+
+    font-weight:600;
+}
+
+.form-group input{
+    width:100%;
+
+    height:48px;
+
+    box-sizing:border-box;
+
+    padding:0 15px;
+
+    background:#0d1425;
+
+    border:1px solid
+        rgba(255,255,255,.10);
+
+    border-radius:10px;
+
+    outline:none;
+
+    color:#ffffff;
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:13px;
+
+    transition:.3s;
+}
+
+.form-group input:focus{
+    border-color:#35d6ff;
+
+    box-shadow:
+        0 0 0 2px
+        rgba(53,214,255,.08);
+}
+
+.form-group input::placeholder{
+    color:#68738a;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.register-submit{
+    width:100%;
+
+    height:50px;
+
+    margin-top:8px;
+
+    border:none;
+
+    border-radius:28px;
+
+    background:linear-gradient(
+        135deg,
+        #7b2ff7,
+        #35d6ff
+    );
+
+    color:#ffffff;
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.register-submit:hover{
+    transform:translateY(-3px);
+
+    background:#35d6ff;
+
+    color:#06101b;
+
+    box-shadow:
+        0 10px 25px
+        rgba(53,214,255,.20);
+}
+
+
+/* =========================================
+   MESSAGE
+========================================= */
+
+.register-message{
+    padding:12px;
+
+    margin-bottom:20px;
+
+    border-radius:10px;
+
+    text-align:center;
+
+    font-size:13px;
+}
+
+.register-message.success{
+    color:#65e69a;
+
+    background:rgba(46,204,113,.10);
+
+    border:1px solid
+        rgba(46,204,113,.25);
+}
+
+.register-message.error{
+    color:#ff8d82;
+
+    background:rgba(231,76,60,.10);
+
+    border:1px solid
+        rgba(231,76,60,.25);
+}
+
+
+/* =========================================
+   LOGIN LINK
+========================================= */
+
+.login-link{
+    margin:25px 0 0;
+
+    text-align:center;
+
+    color:#8992a8;
+
+    font-size:13px;
+}
+
+.login-link a{
+    color:#35d6ff;
+
+    font-weight:600;
+
+    margin-left:5px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media(max-width:576px){
+
+    .register-section{
+        padding-left:5%;
+
+        padding-right:5%;
+    }
+
+    .register-box{
+        padding:28px 20px;
+    }
+
+    .register-heading h1{
+        font-size:28px;
+    }
+
+}

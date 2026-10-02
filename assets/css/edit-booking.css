@@ -1,0 +1,938 @@
+/* =========================================
+   EVENT CRAFTERS - EDIT BOOKING
+========================================= */
+
+.edit-booking-page {
+    min-height: 100vh;
+    padding: 50px 20px 80px;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(155, 93, 229, 0.10),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at bottom left,
+            rgba(53, 214, 255, 0.06),
+            transparent 35%
+        );
+}
+
+
+.edit-booking-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.edit-booking-header {
+    margin-bottom: 30px;
+}
+
+
+.edit-back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-bottom: 28px;
+
+    color: #35D6FF;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+
+.edit-back-btn i {
+    transition: transform 0.3s ease;
+}
+
+
+.edit-back-btn:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+.edit-back-btn:hover i {
+    transform: translateX(-4px);
+}
+
+
+.edit-booking-header > span {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #35D6FF;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.edit-booking-header h1 {
+    margin: 0 0 8px;
+
+    color: #ffffff;
+
+    font-family: "Cinzel", serif;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+
+.edit-booking-header p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.55);
+
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   ERROR
+========================================= */
+
+.edit-error {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 20px;
+    padding: 14px 18px;
+
+    border: 1px solid rgba(255, 107, 107, 0.30);
+    border-radius: 10px;
+
+    background: rgba(255, 107, 107, 0.07);
+
+    color: #ff8585;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+}
+
+
+/* =========================================
+   MAIN CARD
+========================================= */
+
+.edit-booking-card {
+    overflow: hidden;
+
+    padding: 28px;
+
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.045),
+            rgba(255, 255, 255, 0.018)
+        );
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.20);
+}
+
+
+/* =========================================
+   EVENT INFO
+========================================= */
+
+.edit-event-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding-bottom: 24px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+.edit-event-info > div:first-child {
+    min-width: 0;
+}
+
+
+.edit-event-info span {
+    color: #35D6FF;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+
+.edit-event-info h2 {
+    margin: 5px 0 4px;
+
+    color: #ffffff;
+
+    font-family: "Cinzel", serif;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+
+.edit-event-category {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.48);
+
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+}
+
+
+.edit-status {
+    flex-shrink: 0;
+
+    padding: 7px 13px;
+
+    border: 1px solid rgba(53, 214, 255, 0.25);
+    border-radius: 20px;
+
+    background: rgba(53, 214, 255, 0.06);
+
+    color: #35D6FF !important;
+
+    font-family: "Poppins", sans-serif !important;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+
+    letter-spacing: 0 !important;
+}
+
+
+/* =========================================
+   SECTION
+========================================= */
+
+.edit-section {
+    padding: 27px 0;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+.edit-section-title {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    margin-bottom: 22px;
+}
+
+
+.edit-section-title > i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 37px;
+    height: 37px;
+
+    flex-shrink: 0;
+
+    border-radius: 9px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(155, 93, 229, 0.20),
+            rgba(53, 214, 255, 0.08)
+        );
+
+    color: #35D6FF;
+
+    font-size: 15px;
+}
+
+
+.edit-section-title h3 {
+    margin: 0 0 3px;
+
+    color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+.edit-section-title p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.42);
+
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;
+}
+
+
+/* =========================================
+   PERSON CONTROL
+========================================= */
+
+.person-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.person-control button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 35px;
+    height: 35px;
+
+    padding: 0;
+
+    border: 1px solid rgba(53, 214, 255, 0.30);
+    border-radius: 8px;
+
+    background: rgba(53, 214, 255, 0.04);
+
+    color: #35D6FF;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+}
+
+
+.person-control button:hover {
+    border-color: #35D6FF;
+
+    background: rgba(53, 214, 255, 0.10);
+
+    box-shadow:
+        0 0 15px rgba(53, 214, 255, 0.10);
+}
+
+
+.person-control input {
+    width: 75px;
+    height: 35px;
+
+    padding: 0 8px;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+
+    outline: none;
+
+    background: rgba(255, 255, 255, 0.035);
+
+    color: #ffffff;
+
+    text-align: center;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   FOOD GRID
+========================================= */
+
+.edit-food-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 18px;
+}
+
+
+/* =========================================
+   FOOD CARD
+========================================= */
+
+.edit-food-card {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    min-width: 0;
+    min-height: 150px;
+
+    padding: 11px;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.025);
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.25s ease,
+        background 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.edit-food-card:hover {
+    transform: translateY(-2px);
+
+    border-color: rgba(53, 214, 255, 0.45);
+
+    background: rgba(53, 214, 255, 0.035);
+}
+
+
+.edit-food-card.selected {
+    border-color: #35D6FF;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(53, 214, 255, 0.085),
+            rgba(155, 93, 229, 0.055)
+        );
+
+    box-shadow:
+        0 0 22px rgba(53, 214, 255, 0.07);
+}
+
+
+/* =========================================
+   HIDE DEFAULT CHECKBOX
+========================================= */
+
+.edit-food-card input[type="checkbox"] {
+    position: absolute;
+
+    opacity: 0;
+
+    width: 1px;
+    height: 1px;
+}
+
+
+/* =========================================
+   FOOD IMAGE
+========================================= */
+
+.edit-food-image {
+    width: 205px;
+    height: 126px;
+
+    flex-shrink: 0;
+
+    overflow: hidden;
+
+    border-radius: 7px;
+
+    background: rgba(255, 255, 255, 0.04);
+}
+
+
+.edit-food-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+}
+
+
+.edit-food-card:hover .edit-food-image img {
+    transform: scale(1.04);
+}
+
+
+.edit-food-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    color: rgba(53, 214, 255, 0.50);
+
+    font-size: 28px;
+}
+
+
+/* =========================================
+   FOOD CONTENT
+========================================= */
+
+.edit-food-content {
+    min-width: 0;
+
+    flex: 1;
+
+    padding: 0 31px 0 13px;
+}
+
+
+.edit-food-content strong {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+
+    line-height: 1.35;
+}
+
+
+.edit-food-content p {
+    margin: 0 0 9px;
+
+    color: rgba(255, 255, 255, 0.52);
+
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;
+    line-height: 1.45;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+}
+
+
+.edit-food-content > span {
+    color: #35D6FF;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   CHECK ICON
+========================================= */
+
+.edit-check {
+    position: absolute;
+
+    right: 12px;
+    top: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 19px;
+    height: 19px;
+
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 50%;
+
+    background: transparent;
+
+    color: transparent;
+
+    transform: translateY(-50%);
+
+    transition: all 0.25s ease;
+}
+
+
+.edit-food-card.selected .edit-check {
+    border-color: #35D6FF;
+
+    background: #35D6FF;
+
+    color: #07101e;
+
+    box-shadow:
+        0 0 12px rgba(53, 214, 255, 0.25);
+}
+
+
+.edit-check i {
+    font-size: 9px;
+}
+
+
+/* =========================================
+   NO FOOD
+========================================= */
+
+.no-food {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 140px;
+
+    border: 1px dashed rgba(255, 255, 255, 0.13);
+    border-radius: 12px;
+
+    color: rgba(255, 255, 255, 0.45);
+
+    text-align: center;
+}
+
+
+.no-food i {
+    margin-bottom: 10px;
+
+    color: #35D6FF;
+
+    font-size: 25px;
+}
+
+
+.no-food p {
+    margin: 0;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+}
+
+
+/* =========================================
+   TOTAL INFORMATION
+========================================= */
+
+.edit-total-info {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 14px;
+
+    padding: 24px 0;
+}
+
+
+.edit-total-info > div {
+    padding: 16px 17px;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.025);
+}
+
+
+.edit-total-info span {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: rgba(255, 255, 255, 0.48);
+
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;
+}
+
+
+.edit-total-info strong {
+    color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+
+.edit-grand-total-row {
+    grid-column: 1 / -1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.edit-grand-total-row span {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.edit-grand-total-row strong {
+    color: #35D6FF;
+
+    font-size: 22px;
+
+    text-shadow:
+        0 0 12px rgba(53, 214, 255, 0.20);
+}
+
+
+/* =========================================
+   CONFIRMED NOTICE
+========================================= */
+
+.edit-confirmed-notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+
+    margin-bottom: 24px;
+    padding: 15px 17px;
+
+    border: 1px solid rgba(155, 93, 229, 0.22);
+    border-radius: 10px;
+
+    background: rgba(155, 93, 229, 0.06);
+}
+
+
+.edit-confirmed-notice > i {
+    margin-top: 2px;
+
+    color: #9B5DE5;
+
+    font-size: 17px;
+}
+
+
+.edit-confirmed-notice strong {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+}
+
+
+.edit-confirmed-notice p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.52);
+
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.edit-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 12px;
+
+    padding-top: 5px;
+}
+
+
+.edit-cancel-btn,
+.edit-save-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 40px;
+
+    padding: 0 18px;
+
+    border-radius: 8px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+}
+
+
+.edit-cancel-btn {
+    border: 1px solid rgba(255, 255, 255, 0.14);
+
+    background: transparent;
+
+    color: rgba(255, 255, 255, 0.60);
+}
+
+
+.edit-cancel-btn:hover {
+    border-color: rgba(255, 255, 255, 0.28);
+
+    background: rgba(255, 255, 255, 0.04);
+
+    color: #ffffff;
+
+    text-decoration: none;
+}
+
+
+.edit-save-btn {
+    gap: 8px;
+
+    border: none;
+
+    background:
+        linear-gradient(
+            135deg,
+            #9B5DE5,
+            #35D6FF
+        );
+
+    color: #ffffff;
+
+    box-shadow:
+        0 7px 20px rgba(53, 214, 255, 0.12);
+}
+
+
+.edit-save-btn:hover {
+    transform: translateY(-1px);
+
+    color: #ffffff;
+
+    box-shadow:
+        0 10px 25px rgba(53, 214, 255, 0.20);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .edit-food-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .edit-booking-page {
+        padding: 30px 12px 60px;
+    }
+
+
+    .edit-booking-card {
+        padding: 18px;
+    }
+
+
+    .edit-booking-header h1 {
+        font-size: 28px;
+    }
+
+
+    .edit-event-info {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+
+    .edit-status {
+        align-self: flex-start;
+    }
+
+
+    .edit-food-card {
+        min-height: 125px;
+    }
+
+
+    .edit-food-image {
+        width: 120px;
+        height: 95px;
+    }
+
+
+    .edit-food-content {
+        padding-left: 10px;
+        padding-right: 25px;
+    }
+
+
+    .edit-food-content strong {
+        font-size: 13px;
+    }
+
+
+    .edit-food-content p {
+        font-size: 10px;
+    }
+
+
+    .edit-total-info {
+        grid-template-columns: 1fr;
+    }
+
+
+    .edit-grand-total-row {
+        grid-column: auto;
+    }
+
+
+    .edit-actions {
+        justify-content: stretch;
+    }
+
+
+    .edit-cancel-btn,
+    .edit-save-btn {
+        flex: 1;
+    }
+
+}

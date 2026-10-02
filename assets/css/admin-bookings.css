@@ -1,0 +1,449 @@
+/* =========================================
+   ADMIN BOOKINGS
+========================================= */
+
+.admin-bookings-section{
+    padding:60px 5% 90px;
+}
+
+.admin-bookings-container{
+    max-width:1250px;
+    margin:auto;
+}
+
+
+/* =========================================
+   BACK BUTTON
+========================================= */
+
+.admin-back-btn{
+    display:inline-flex;
+
+    align-items:center;
+    gap:8px;
+
+    margin:25px 5% 0;
+
+    color:#35d6ff;
+
+    font-size:13px;
+    font-weight:600;
+
+    text-decoration:none;
+
+    transition:.3s;
+}
+
+.admin-back-btn:hover{
+    color:#ffffff;
+
+    text-decoration:none;
+
+    transform:translateX(-4px);
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.admin-bookings-heading{
+    margin-bottom:35px;
+}
+
+.admin-bookings-heading span{
+    color:#35d6ff;
+
+    font-size:11px;
+    font-weight:700;
+
+    letter-spacing:3px;
+}
+
+.admin-bookings-heading h1{
+    color:#ffffff;
+
+    font-family:'Cinzel',serif;
+
+    font-size:36px;
+
+    margin:10px 0 8px;
+}
+
+.admin-bookings-heading p{
+    color:#929db2;
+
+    font-size:13px;
+
+    margin:0;
+}
+
+
+/* =========================================
+   BOOKINGS CARD
+========================================= */
+
+.admin-bookings-card{
+    background:#111827;
+
+    border:1px solid
+        rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    overflow:hidden;
+}
+
+
+/* =========================================
+   TABLE WRAPPER
+========================================= */
+
+.bookings-table-wrapper{
+    width:100%;
+
+    overflow-x:auto;
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.bookings-table{
+    width:100%;
+
+    min-width:1050px;
+
+    border-collapse:collapse;
+}
+
+
+/* =========================================
+   TABLE HEADER
+========================================= */
+
+.bookings-table thead{
+    background:#0b1220;
+}
+
+.bookings-table th{
+    padding:17px 16px;
+
+    color:#8e99ae;
+
+    font-size:11px;
+
+    font-weight:700;
+
+    text-align:left;
+
+    text-transform:uppercase;
+
+    letter-spacing:.7px;
+
+    border-bottom:1px solid
+        rgba(255,255,255,.07);
+
+    white-space:nowrap;
+}
+
+
+/* =========================================
+   TABLE DATA
+========================================= */
+
+.bookings-table td{
+    padding:17px 16px;
+
+    color:#cbd2df;
+
+    font-size:13px;
+
+    border-bottom:1px solid
+        rgba(255,255,255,.06);
+
+    vertical-align:middle;
+}
+
+.bookings-table tbody tr{
+    transition:.25s;
+}
+
+.bookings-table tbody tr:hover{
+    background:
+        rgba(53,214,255,.025);
+}
+
+.bookings-table tbody tr:last-child td{
+    border-bottom:0;
+}
+
+
+/* =========================================
+   USER
+========================================= */
+
+.booking-user{
+    display:flex;
+
+    flex-direction:column;
+
+    gap:5px;
+
+    min-width:150px;
+}
+
+.booking-user strong{
+    color:#ffffff;
+
+    font-size:13px;
+
+    font-weight:600;
+}
+
+.booking-user small{
+    color:#7f8a9e;
+
+    font-size:11px;
+}
+
+
+/* =========================================
+   EVENT
+========================================= */
+
+.booking-event{
+    display:flex;
+
+    flex-direction:column;
+
+    gap:5px;
+
+    min-width:150px;
+}
+
+.booking-event strong{
+    color:#ffffff;
+
+    font-size:13px;
+
+    font-weight:600;
+}
+
+.booking-event small{
+    color:#b987ff;
+
+    font-size:11px;
+}
+
+
+/* =========================================
+   PERSONS
+========================================= */
+
+.booking-persons{
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:7px;
+
+    color:#cbd2df;
+
+    white-space:nowrap;
+}
+
+.booking-persons i{
+    color:#35d6ff;
+
+    font-size:12px;
+}
+
+
+/* =========================================
+   AMOUNT
+========================================= */
+
+.booking-amount{
+    color:#35d6ff;
+
+    font-size:14px;
+
+    white-space:nowrap;
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+.booking-status{
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    min-width:82px;
+
+    padding:6px 11px;
+
+    border-radius:20px;
+
+    font-size:10px;
+
+    font-weight:700;
+
+    text-transform:capitalize;
+
+    white-space:nowrap;
+}
+
+
+/* PENDING */
+
+.booking-status.pending{
+    background:rgba(255,190,70,.10);
+
+    border:1px solid
+        rgba(255,190,70,.20);
+
+    color:#ffc857;
+}
+
+
+/* CONFIRMED */
+
+.booking-status.confirmed{
+    background:rgba(53,214,255,.10);
+
+    border:1px solid
+        rgba(53,214,255,.20);
+
+    color:#35d6ff;
+}
+
+
+/* CANCELLED */
+
+.booking-status.cancelled{
+    background:rgba(255,70,90,.10);
+
+    border:1px solid
+        rgba(255,70,90,.20);
+
+    color:#ff7180;
+}
+
+
+/* =========================================
+   ACTION BUTTON
+========================================= */
+
+.booking-action-btn{
+    width:36px;
+    height:36px;
+
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    border-radius:9px;
+
+    background:
+        rgba(53,214,255,.09);
+
+    color:#35d6ff;
+
+    text-decoration:none;
+
+    transition:.3s;
+}
+
+.booking-action-btn:hover{
+    background:#35d6ff;
+
+    color:#07111c;
+
+    text-decoration:none;
+
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 7px 18px
+        rgba(53,214,255,.12);
+}
+
+
+/* =========================================
+   NO BOOKINGS
+========================================= */
+
+.no-bookings{
+    padding:0 !important;
+
+    border-bottom:0 !important;
+}
+
+.no-bookings-content{
+    padding:80px 25px;
+
+    text-align:center;
+}
+
+.no-bookings-content i{
+    width:70px;
+    height:70px;
+
+    margin:0 auto 18px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    border-radius:20px;
+
+    background:
+        rgba(53,214,255,.08);
+
+    color:#35d6ff;
+
+    font-size:28px;
+}
+
+.no-bookings-content h2{
+    color:#ffffff;
+
+    font-family:'Cinzel',serif;
+
+    font-size:23px;
+
+    margin-bottom:8px;
+}
+
+.no-bookings-content p{
+    color:#8993a8;
+
+    font-size:13px;
+
+    margin:0;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media(max-width:700px){
+
+    .admin-bookings-section{
+        padding:45px 4% 70px;
+    }
+
+    .admin-bookings-heading h1{
+        font-size:30px;
+    }
+
+}

@@ -1,0 +1,1445 @@
+/* =========================================================
+   EVENT CRAFTERS - CALENDAR
+   Premium Dark Theme
+========================================================= */
+
+
+/* =========================================================
+   CALENDAR PAGE
+========================================================= */
+
+.calendar-page {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 25px 80px;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.calendar-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.calendar-label {
+    display: block;
+    margin-bottom: 10px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    color: #35d6ff;
+}
+
+.calendar-header h1 {
+    margin: 0;
+
+    font-family: "Cinzel", serif;
+    font-size: 38px;
+    font-weight: 500;
+
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+.calendar-header p {
+    margin: 12px 0 0;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+
+    color: #8f9bb8;
+}
+
+
+/* =========================================================
+   CONTROLS
+========================================================= */
+
+.calendar-controls {
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.calendar-search {
+    position: relative;
+    width: 230px;
+}
+
+.calendar-search i {
+    position: absolute;
+
+    left: 13px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #35d6ff;
+    font-size: 13px;
+
+    pointer-events: none;
+}
+
+.calendar-search input {
+    width: 100%;
+    height: 42px;
+
+    padding: 0 14px 0 38px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #193c5b;
+    border-radius: 8px;
+
+    outline: none;
+
+    background: #10182d;
+    color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+
+    transition: 0.3s ease;
+}
+
+.calendar-search input::placeholder {
+    color: #66728e;
+}
+
+.calendar-search input:focus {
+    border-color: #35d6ff;
+
+    box-shadow:
+        0 0 0 2px rgba(53, 214, 255, 0.08),
+        0 0 18px rgba(53, 214, 255, 0.12);
+}
+
+
+/* =========================================================
+   CATEGORY FILTER
+========================================================= */
+
+#categoryFilter {
+    width: 150px;
+    height: 42px;
+
+    padding: 0 12px;
+
+    border: 1px solid #193c5b;
+    border-radius: 8px;
+
+    outline: none;
+
+    background: #10182d;
+    color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+#categoryFilter:focus {
+    border-color: #35d6ff;
+
+    box-shadow:
+        0 0 0 2px rgba(53, 214, 255, 0.08),
+        0 0 18px rgba(53, 214, 255, 0.12);
+}
+
+
+/* =========================================================
+   CALENDAR CARD
+========================================================= */
+
+.calendar-card {
+    width: 100%;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #164563;
+    border-radius: 16px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #111a31,
+            #0c1428
+        );
+
+    box-shadow:
+        0 0 25px rgba(20, 190, 255, 0.04);
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   CALENDAR TOP
+========================================================= */
+
+.calendar-top {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 45px 1fr 45px;
+
+    align-items: center;
+
+    margin-bottom: 15px;
+}
+
+.calendar-month {
+    text-align: center;
+}
+
+.calendar-month h2 {
+    margin: 0;
+
+    font-family: "Cinzel", serif;
+    font-size: 21px;
+    font-weight: 600;
+
+    color: #ffffff;
+
+    text-transform: capitalize;
+}
+
+
+/* =========================================================
+   MONTH BUTTONS
+========================================================= */
+
+.calendar-nav-btn {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #174968;
+    border-radius: 50%;
+
+    background: #0b162c;
+    color: #35d6ff;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.calendar-nav-btn:hover {
+    border-color: #35d6ff;
+
+    background: #10263d;
+
+    box-shadow:
+        0 0 15px rgba(53, 214, 255, 0.18);
+
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   TODAY BUTTON
+========================================================= */
+
+.today-btn {
+    display: block;
+
+    margin: 0 auto 25px;
+
+    padding: 7px 14px;
+
+    border: 1px solid #164d68;
+    border-radius: 20px;
+
+    background: #0d2035;
+    color: #35d6ff;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.today-btn:hover {
+    background: #12304a;
+
+    border-color: #35d6ff;
+
+    box-shadow:
+        0 0 14px rgba(53, 214, 255, 0.15);
+}
+
+
+/* =========================================================
+   WEEK DAYS
+========================================================= */
+
+.calendar-weekdays {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(7, minmax(0, 1fr));
+
+    gap: 6px;
+
+    margin-bottom: 8px;
+}
+
+.calendar-weekdays div {
+    min-width: 0;
+
+    text-align: center;
+
+    padding: 8px 2px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+
+    color: #35d6ff;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   CALENDAR DAYS
+========================================================= */
+
+.calendar-days {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(7, minmax(0, 1fr));
+
+    grid-auto-rows: minmax(95px, auto);
+
+    gap: 6px;
+}
+
+
+/* =========================================================
+   SINGLE DAY
+========================================================= */
+
+.calendar-day {
+    position: relative;
+
+    min-width: 0;
+    min-height: 95px;
+
+    padding: 9px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #16263e;
+    border-radius: 9px;
+
+    background: #091225;
+
+    overflow: hidden;
+
+    transition: 0.25s ease;
+}
+
+.calendar-day:hover {
+    border-color: #205577;
+
+    background: #0c172b;
+
+    box-shadow:
+        inset 0 0 20px rgba(53, 214, 255, 0.025);
+}
+
+
+/* =========================================================
+   EMPTY DAY
+========================================================= */
+
+.calendar-day.empty {
+    background: transparent;
+
+    border-color: transparent;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   DATE NUMBER
+========================================================= */
+
+.date-number {
+    display: block;
+
+    width: 24px;
+    height: 24px;
+
+    line-height: 24px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+
+    color: #d9e2f2;
+}
+
+
+/* =========================================================
+   TODAY
+========================================================= */
+
+.calendar-day.today {
+    border-color: #35d6ff;
+
+    box-shadow:
+        0 0 14px rgba(53, 214, 255, 0.08);
+}
+
+.calendar-day.today .date-number {
+    color: #35d6ff;
+}
+
+
+/* =========================================================
+   EVENT
+========================================================= */
+
+.calendar-event {
+    width: 100%;
+
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+
+    margin-top: 7px;
+
+    padding: 5px 6px;
+
+    box-sizing: border-box;
+
+    border: 1px solid rgba(126, 73, 255, 0.35);
+    border-radius: 5px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(91, 52, 205, 0.22),
+            rgba(35, 214, 255, 0.04)
+        );
+
+    color: #ffffff;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.calendar-event:hover {
+    border-color: #35d6ff;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(91, 52, 205, 0.35),
+            rgba(35, 214, 255, 0.08)
+        );
+
+    box-shadow:
+        0 0 12px rgba(53, 214, 255, 0.10);
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   EVENT DOT
+========================================================= */
+
+.event-dot {
+    flex: 0 0 5px;
+
+    width: 5px;
+    height: 5px;
+
+    border-radius: 50%;
+
+    background: #35d6ff;
+
+    box-shadow:
+        0 0 7px rgba(53, 214, 255, 0.7);
+}
+
+
+/* =========================================================
+   EVENT ICON
+========================================================= */
+
+.event-icon {
+    flex: 0 0 auto;
+
+    font-size: 11px;
+
+    line-height: 1;
+}
+
+
+/* =========================================================
+   EVENT NAME
+========================================================= */
+
+.event-name {
+    min-width: 0;
+
+    overflow: hidden;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 8px;
+    font-weight: 500;
+
+    color: #e5eaff;
+}
+
+
+/* =========================================================
+   MULTIPLE EVENTS
+========================================================= */
+
+.calendar-day .calendar-event + .calendar-event {
+    margin-top: 4px;
+}
+
+
+/* =========================================================
+   EVENT MODAL
+========================================================= */
+
+.event-modal {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 9999;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    background:
+        rgba(3, 7, 18, 0.78);
+
+    backdrop-filter: blur(8px);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        opacity 0.25s ease,
+        visibility 0.25s ease;
+}
+
+.event-modal.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* =========================================================
+   MODAL CONTENT
+========================================================= */
+
+.event-modal-content {
+    position: relative;
+
+    width: 100%;
+    max-width: 480px;
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    border: 1px solid #245b7d;
+    border-radius: 16px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #111b32,
+            #0b1326
+        );
+
+    box-shadow:
+        0 20px 70px rgba(0, 0, 0, 0.65),
+        0 0 30px rgba(53, 214, 255, 0.08);
+
+    transform: translateY(20px) scale(0.98);
+
+    transition: 0.25s ease;
+}
+
+.event-modal.show .event-modal-content {
+    transform: translateY(0) scale(1);
+}
+
+
+/* =========================================================
+   MODAL CLOSE
+========================================================= */
+
+.modal-close {
+    position: absolute;
+
+    top: 12px;
+    right: 12px;
+
+    z-index: 5;
+
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+
+    background: rgba(5, 10, 24, 0.85);
+
+    color: #ffffff;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.modal-close:hover {
+    border-color: #35d6ff;
+
+    color: #35d6ff;
+
+    transform: rotate(90deg);
+}
+
+
+/* =========================================================
+   MODAL IMAGE
+========================================================= */
+
+.modal-image-wrapper {
+    position: relative;
+
+    width: 100%;
+    height: 250px;
+
+    overflow: hidden;
+
+    border-radius: 16px 16px 0 0;
+
+    background: #080f20;
+}
+
+.modal-event-image {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+.modal-image-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(8, 15, 32, 0.65),
+            transparent 60%
+        );
+}
+
+
+/* =========================================================
+   MODAL NO IMAGE
+========================================================= */
+
+.modal-no-image {
+    width: 100%;
+    height: 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(112, 55, 255, 0.18),
+            transparent 65%
+        );
+
+    font-size: 50px;
+}
+
+
+/* =========================================================
+   MODAL DETAILS
+========================================================= */
+
+.modal-event-details {
+    padding: 25px;
+}
+
+
+/* =========================================================
+   MODAL CATEGORY
+========================================================= */
+
+.modal-event-category {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 7px;
+
+    margin-bottom: 10px;
+
+    padding: 5px 10px;
+
+    border: 1px solid rgba(53, 214, 255, 0.22);
+    border-radius: 20px;
+
+    background: rgba(53, 214, 255, 0.05);
+
+    color: #35d6ff;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+
+    text-transform: uppercase;
+}
+
+.modal-category-icon {
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   MODAL TITLE
+========================================================= */
+
+.modal-event-details h2 {
+    margin: 0 0 20px;
+
+    font-family: "Cinzel", serif;
+    font-size: 28px;
+    font-weight: 600;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   MODAL INFO
+========================================================= */
+
+.modal-info {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+.modal-info-item {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 10px;
+
+    border: 1px solid #182b45;
+    border-radius: 8px;
+
+    background: rgba(7, 15, 31, 0.65);
+}
+
+.modal-info-icon {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 32px;
+
+    border-radius: 7px;
+
+    background: rgba(53, 214, 255, 0.07);
+
+    color: #35d6ff;
+
+    font-size: 13px;
+}
+
+.modal-info-item div {
+    min-width: 0;
+}
+
+.modal-info-item small {
+    display: block;
+
+    margin-bottom: 2px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 9px;
+
+    color: #73819e;
+}
+
+.modal-info-item strong {
+    display: block;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+
+    color: #eaf0ff;
+
+    word-break: break-word;
+}
+
+
+/* =========================================================
+   MODAL PRICE
+========================================================= */
+
+.modal-price-box {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 20px;
+
+    padding: 14px;
+
+    border: 1px solid rgba(126, 73, 255, 0.3);
+    border-radius: 9px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(89, 49, 215, 0.12),
+            rgba(53, 214, 255, 0.04)
+        );
+}
+
+.modal-price-box span {
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+
+    color: #8e9ab4;
+}
+
+.modal-price-box strong {
+    margin-left: auto;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+
+    color: #35d6ff;
+}
+
+.modal-price-box small {
+    font-family: "Poppins", sans-serif;
+    font-size: 9px;
+
+    color: #6f7d99;
+}
+
+
+/* =========================================================
+   VIEW EVENT BUTTON
+========================================================= */
+
+.modal-view-btn {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 11px 16px;
+
+    box-sizing: border-box;
+
+    border: none;
+    border-radius: 8px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #713cff,
+            #35d6ff
+        );
+
+    color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: 0.25s ease;
+}
+
+.modal-view-btn:hover {
+    color: #ffffff;
+    text-decoration: none;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 25px rgba(53, 214, 255, 0.15);
+}
+
+
+/* =========================================================
+   MODAL SCROLLBAR
+========================================================= */
+
+.event-modal-content::-webkit-scrollbar {
+    width: 5px;
+}
+
+.event-modal-content::-webkit-scrollbar-track {
+    background: #091225;
+}
+
+.event-modal-content::-webkit-scrollbar-thumb {
+    background: #24506b;
+    border-radius: 10px;
+}
+
+
+/* =========================================================
+   RESPONSIVE - TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .calendar-page {
+        padding: 55px 18px 60px;
+    }
+
+    .calendar-header h1 {
+        font-size: 32px;
+    }
+
+    .calendar-days {
+        grid-auto-rows: minmax(85px, auto);
+    }
+
+    .calendar-day {
+        min-height: 85px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .calendar-page {
+        padding: 40px 10px 50px;
+    }
+
+    .calendar-header {
+        margin-bottom: 25px;
+    }
+
+    .calendar-header h1 {
+        font-size: 27px;
+    }
+
+    .calendar-header p {
+        font-size: 12px;
+    }
+
+
+    .calendar-controls {
+        justify-content: center;
+
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .calendar-search {
+        width: 100%;
+    }
+
+    #categoryFilter {
+        width: 100%;
+    }
+
+
+    .calendar-card {
+        padding: 10px;
+
+        border-radius: 12px;
+    }
+
+
+    .calendar-top {
+        grid-template-columns: 38px 1fr 38px;
+    }
+
+
+    .calendar-month h2 {
+        font-size: 17px;
+    }
+
+
+    .calendar-weekdays {
+        gap: 3px;
+    }
+
+    .calendar-weekdays div {
+        font-size: 8px;
+        padding: 6px 1px;
+    }
+
+
+    .calendar-days {
+        grid-template-columns:
+            repeat(7, minmax(0, 1fr));
+
+        gap: 3px;
+
+        grid-auto-rows: minmax(65px, auto);
+    }
+
+
+    .calendar-day {
+        min-height: 65px;
+
+        padding: 5px;
+
+        border-radius: 6px;
+    }
+
+
+    .date-number {
+        width: 20px;
+        height: 20px;
+
+        line-height: 20px;
+
+        font-size: 9px;
+    }
+
+
+    .calendar-event {
+        gap: 3px;
+
+        margin-top: 4px;
+
+        padding: 3px;
+
+        border-radius: 4px;
+    }
+
+
+    .event-dot {
+        width: 4px;
+        height: 4px;
+
+        flex-basis: 4px;
+    }
+
+
+    .event-icon {
+        font-size: 8px;
+    }
+
+
+    .event-name {
+        font-size: 6px;
+    }
+
+
+    .event-modal {
+        padding: 10px;
+    }
+
+
+    .modal-image-wrapper {
+        height: 190px;
+    }
+
+
+    .modal-event-details {
+        padding: 18px;
+    }
+
+
+    .modal-event-details h2 {
+        font-size: 23px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .calendar-page {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+    .calendar-card {
+        padding: 7px;
+    }
+
+    .calendar-days {
+        gap: 2px;
+    }
+
+    .calendar-day {
+        padding: 4px;
+    }
+
+    .event-name {
+        font-size: 5.5px;
+    }
+
+}
+/* =========================================================
+   MORE EVENTS BUTTON
+========================================================= */
+
+.calendar-more {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    margin-top: 5px;
+    padding: 4px 6px;
+
+    border-radius: 5px;
+
+    background: rgba(53, 214, 255, 0.06);
+
+    color: #35d6ff;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 8px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.calendar-more:hover {
+    background: rgba(53, 214, 255, 0.12);
+
+    box-shadow:
+        0 0 10px rgba(53, 214, 255, 0.08);
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   ALL EVENTS POPUP
+========================================================= */
+
+.date-events-modal {
+    padding: 28px;
+}
+
+.date-events-heading {
+    margin-bottom: 20px;
+}
+
+.date-events-heading > span {
+    display: inline-block;
+
+    margin-bottom: 8px;
+
+    padding: 5px 10px;
+
+    border: 1px solid rgba(53, 214, 255, 0.25);
+    border-radius: 20px;
+
+    color: #35d6ff;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+}
+
+.date-events-heading h2 {
+    margin: 0 0 5px;
+
+    color: #ffffff;
+
+    font-family: "Cinzel", serif;
+    font-size: 24px;
+}
+
+.date-events-heading p {
+    margin: 0;
+
+    color: #7887a5;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   EVENT LIST
+========================================================= */
+
+.date-events-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 9px;
+
+    max-height: 400px;
+
+    overflow-y: auto;
+
+    padding-right: 4px;
+}
+
+
+/* =========================================================
+   DATE EVENT CARD
+========================================================= */
+
+.date-event-card {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 11px;
+
+    border: 1px solid #1a304b;
+    border-radius: 9px;
+
+    background: #0a1428;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.date-event-card:hover {
+    border-color: #35d6ff;
+
+    background: #0e1b31;
+
+    box-shadow:
+        0 0 15px rgba(53, 214, 255, 0.08);
+
+    transform: translateX(3px);
+}
+
+
+/* =========================================================
+   EVENT ICON
+========================================================= */
+
+.date-event-icon {
+    width: 38px;
+    height: 38px;
+
+    flex: 0 0 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(113, 60, 255, 0.20),
+            rgba(53, 214, 255, 0.08)
+        );
+
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   EVENT INFO
+========================================================= */
+
+.date-event-info {
+    min-width: 0;
+
+    flex: 1;
+}
+
+.date-event-info strong {
+    display: block;
+
+    overflow: hidden;
+
+    white-space: nowrap;
+
+    text-overflow: ellipsis;
+
+    color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.date-event-info span {
+    display: block;
+
+    margin-top: 2px;
+
+    color: #35d6ff;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 9px;
+}
+
+.date-event-info small {
+    display: block;
+
+    margin-top: 4px;
+
+    color: #7887a5;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 8px;
+}
+
+.date-event-info small i {
+    margin-right: 4px;
+
+    color: #35d6ff;
+}
+
+.date-event-card > i {
+    color: #4c607e;
+
+    font-size: 10px;
+
+    transition: 0.2s ease;
+}
+
+.date-event-card:hover > i {
+    color: #35d6ff;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .calendar-more {
+        font-size: 6px;
+        padding: 3px 4px;
+    }
+
+    .date-events-modal {
+        padding: 18px;
+    }
+
+    .date-events-heading h2 {
+        font-size: 20px;
+    }
+
+    .date-event-card {
+        padding: 9px;
+        gap: 9px;
+    }
+
+    .date-event-icon {
+        width: 34px;
+        height: 34px;
+
+        flex-basis: 34px;
+
+        font-size: 15px;
+    }
+
+}

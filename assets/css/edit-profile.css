@@ -1,0 +1,363 @@
+/* =========================================
+   EDIT PROFILE
+========================================= */
+
+.edit-profile-section{
+    padding:60px 5% 90px;
+}
+
+.edit-profile-container{
+    max-width:850px;
+    margin:auto;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.edit-profile-heading{
+    margin-bottom:32px;
+}
+
+.edit-profile-heading span{
+    color:#35d6ff;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:3px;
+}
+
+.edit-profile-heading h1{
+    color:#ffffff;
+    font-family:'Cinzel',serif;
+    font-size:36px;
+    margin:10px 0 8px;
+}
+
+.edit-profile-heading p{
+    color:#929db2;
+    font-size:13px;
+    margin:0;
+}
+
+
+/* =========================================
+   MESSAGE
+========================================= */
+
+.edit-profile-message{
+    padding:14px 18px;
+    border-radius:10px;
+    margin-bottom:22px;
+    font-size:13px;
+    border:1px solid;
+}
+
+.edit-profile-message.success{
+    background:rgba(53,214,255,.08);
+    border-color:rgba(53,214,255,.25);
+    color:#35d6ff;
+}
+
+.edit-profile-message.error{
+    background:rgba(255,70,90,.08);
+    border-color:rgba(255,70,90,.25);
+    color:#ff7a87;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.edit-profile-card{
+    background:#111827;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:32px;
+    box-shadow:0 20px 50px rgba(0,0,0,.18);
+}
+
+
+/* =========================================
+   TOP
+========================================= */
+
+.edit-profile-top{
+    display:flex;
+    align-items:center;
+    gap:16px;
+    padding-bottom:25px;
+    margin-bottom:28px;
+    border-bottom:1px solid rgba(255,255,255,.07);
+}
+
+.edit-profile-avatar{
+    width:58px;
+    height:58px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:16px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(123,47,247,.18),
+            rgba(53,214,255,.12)
+        );
+
+    color:#35d6ff;
+
+    font-size:23px;
+}
+
+.edit-profile-top h2{
+    color:#ffffff;
+    font-size:19px;
+    margin:0 0 5px;
+}
+
+.edit-profile-top p{
+    color:#8993a8;
+    font-size:12px;
+    margin:0;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.form-group{
+    margin-bottom:22px;
+}
+
+.form-group label{
+    display:block;
+
+    color:#cbd2df;
+
+    font-size:12px;
+    font-weight:600;
+
+    margin-bottom:9px;
+}
+
+.form-group label i{
+    color:#35d6ff;
+    margin-right:6px;
+}
+
+.form-group input{
+    width:100%;
+    box-sizing:border-box;
+
+    padding:13px 15px;
+
+    border-radius:10px;
+
+    border:1px solid
+        rgba(255,255,255,.09);
+
+    background:#0b1220;
+
+    color:#ffffff;
+
+    font-size:13px;
+
+    outline:none;
+
+    transition:.25s;
+}
+
+.form-group input::placeholder{
+    color:#667085;
+}
+
+.form-group input:focus{
+    border-color:#35d6ff;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(53,214,255,.08);
+}
+
+
+/* =========================================
+   PASSWORD NOTE
+========================================= */
+
+.password-note{
+    display:flex;
+    align-items:flex-start;
+    gap:12px;
+
+    padding:15px 16px;
+
+    margin-top:5px;
+    margin-bottom:28px;
+
+    border-radius:12px;
+
+    background:rgba(123,47,247,.07);
+
+    border:1px solid
+        rgba(123,47,247,.14);
+}
+
+.password-note > i{
+    color:#b987ff;
+    margin-top:2px;
+}
+
+.password-note strong{
+    display:block;
+
+    color:#ffffff;
+
+    font-size:12px;
+
+    margin-bottom:4px;
+}
+
+.password-note p{
+    color:#8993a8;
+
+    font-size:11px;
+
+    margin:0;
+}
+
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.edit-profile-actions{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+
+    gap:12px;
+
+    padding-top:5px;
+}
+
+
+/* =========================================
+   CANCEL
+========================================= */
+
+.cancel-profile-btn{
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    min-width:90px;
+
+    padding:12px 18px;
+
+    border-radius:10px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid
+        rgba(255,255,255,.09);
+
+    color:#aab3c3;
+
+    text-decoration:none;
+
+    font-size:12px;
+    font-weight:600;
+
+    transition:.25s;
+}
+
+.cancel-profile-btn:hover{
+    color:#ffffff;
+    background:rgba(255,255,255,.09);
+    text-decoration:none;
+}
+
+
+/* =========================================
+   UPDATE BUTTON
+========================================= */
+
+.update-profile-btn{
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    gap:8px;
+
+    padding:12px 20px;
+
+    border:0;
+
+    border-radius:10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #7b2ff7,
+            #35d6ff
+        );
+
+    color:#ffffff;
+
+    font-size:12px;
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.update-profile-btn:hover{
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 10px 25px
+        rgba(53,214,255,.18);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media(max-width:600px){
+
+    .edit-profile-section{
+        padding:45px 4% 70px;
+    }
+
+    .edit-profile-heading h1{
+        font-size:29px;
+    }
+
+    .edit-profile-card{
+        padding:23px 18px;
+    }
+
+    .edit-profile-top{
+        align-items:flex-start;
+    }
+
+    .edit-profile-actions{
+        flex-direction:column-reverse;
+    }
+
+    .cancel-profile-btn,
+    .update-profile-btn{
+        width:100%;
+    }
+
+}

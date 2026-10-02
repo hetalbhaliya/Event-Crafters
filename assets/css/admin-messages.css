@@ -1,0 +1,538 @@
+/* =========================================
+   ADMIN MESSAGES
+========================================= */
+
+.admin-messages-section {
+    min-height: 80vh;
+    padding: 50px 20px 70px;
+    background: #0b1020;
+}
+
+.admin-messages-container {
+    width: 92%;
+    max-width: 1350px;
+    margin: auto;
+}
+
+
+/* =========================================
+   BACK BUTTON
+========================================= */
+
+.admin-messages-container .back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-bottom: 30px;
+
+    color: #35d6ff;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.admin-messages-container .back-btn:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.admin-messages-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.admin-messages-heading span {
+    display: block;
+
+    color: #35d6ff;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+.admin-messages-heading h1 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family: "Cinzel", serif;
+
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.admin-messages-heading p {
+    margin-top: 12px;
+
+    color: #aeb6c7;
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   SUCCESS MESSAGE
+========================================= */
+
+.message-success {
+    margin-bottom: 25px;
+
+    padding: 14px 18px;
+
+    background: rgba(53, 214, 255, 0.08);
+
+    border: 1px solid rgba(53, 214, 255, 0.25);
+
+    border-radius: 10px;
+
+    color: #35d6ff;
+
+    font-size: 14px;
+}
+
+.message-success i {
+    margin-right: 8px;
+}
+
+
+/* =========================================
+   MAIN CARD
+========================================= */
+
+.messages-list-card {
+    background: rgba(18, 26, 45, 0.96);
+
+    border: 1px solid #26324a;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================================
+   CARD HEADER
+========================================= */
+
+.messages-card-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 25px 28px;
+
+    border-bottom: 1px solid #26324a;
+}
+
+.messages-card-heading span {
+    color: #35d6ff;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+.messages-card-heading h2 {
+    margin: 6px 0 0;
+
+    color: #ffffff;
+
+    font-size: 23px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   MESSAGE COUNT
+========================================= */
+
+.messages-count {
+    min-width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 0 12px;
+
+    background: rgba(53, 214, 255, 0.10);
+
+    border: 1px solid rgba(53, 214, 255, 0.25);
+
+    border-radius: 10px;
+
+    color: #35d6ff;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   TABLE WRAPPER
+========================================= */
+
+.messages-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.messages-table {
+    width: 100%;
+    min-width: 1050px;
+
+    border-collapse: collapse;
+}
+
+
+/* =========================================
+   TABLE HEADER
+========================================= */
+
+.messages-table thead {
+    background: #11192b;
+}
+
+.messages-table th {
+    padding: 17px 18px;
+
+    text-align: left;
+
+    color: #8f9bb2;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.8px;
+
+    border-bottom: 1px solid #26324a;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   TABLE BODY
+========================================= */
+
+.messages-table td {
+    padding: 17px 18px;
+
+    color: #d9deea;
+
+    font-size: 13px;
+
+    border-bottom:
+        1px solid rgba(38, 50, 74, 0.65);
+
+    vertical-align: middle;
+}
+
+.messages-table tbody tr {
+    transition: 0.25s ease;
+}
+
+.messages-table tbody tr:hover {
+    background: rgba(53, 214, 255, 0.035);
+}
+
+.messages-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* =========================================
+   MESSAGE NAME
+========================================= */
+
+.message-name {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    min-width: 150px;
+}
+
+.message-icon {
+    width: 36px;
+    height: 36px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(53, 214, 255, 0.10);
+
+    border: 1px solid rgba(53, 214, 255, 0.20);
+
+    border-radius: 50%;
+
+    color: #35d6ff;
+}
+
+.message-name span {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+
+/* =========================================
+   EMAIL
+========================================= */
+
+.messages-table td:nth-child(3) {
+    color: #aeb6c7;
+}
+
+
+/* =========================================
+   SUBJECT
+========================================= */
+
+.messages-table td:nth-child(4) {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+
+/* =========================================
+   MESSAGE TEXT
+========================================= */
+
+.message-text {
+    max-width: 300px;
+
+    color: #aeb6c7;
+
+    line-height: 1.5;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   DELETE BUTTON
+========================================= */
+
+.message-delete-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    padding: 8px 13px;
+
+    background: rgba(255, 80, 80, 0.08);
+
+    border: 1px solid rgba(255, 80, 80, 0.22);
+
+    border-radius: 7px;
+
+    color: #ff7070;
+
+    text-decoration: none;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    transition: 0.25s ease;
+}
+
+.message-delete-btn:hover {
+    background: rgba(255, 80, 80, 0.15);
+
+    border-color: #ff7070;
+
+    color: #ff8585;
+
+    text-decoration: none;
+}
+
+
+/* =========================================
+   EMPTY
+========================================= */
+
+.messages-empty {
+    padding: 70px 20px;
+
+    text-align: center;
+}
+
+.messages-empty i {
+    margin-bottom: 15px;
+
+    color: #35d6ff;
+
+    font-size: 42px;
+}
+
+.messages-empty h3 {
+    margin: 0 0 8px;
+
+    color: #ffffff;
+
+    font-size: 21px;
+}
+
+.messages-empty p {
+    margin: 0;
+
+    color: #8f9bb2;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .admin-messages-section {
+        padding: 40px 15px 60px;
+    }
+
+    .admin-messages-container {
+        width: 100%;
+    }
+
+    .admin-messages-heading h1 {
+        font-size: 30px;
+    }
+
+    .messages-card-heading {
+        padding: 20px;
+    }
+
+    .messages-table th,
+    .messages-table td {
+        padding: 14px 12px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL SCREEN
+========================================= */
+
+@media (max-width: 600px) {
+
+    .messages-table-wrapper {
+        overflow-x: hidden;
+    }
+
+    .messages-table {
+        min-width: 0;
+        width: 100%;
+
+        table-layout: fixed;
+    }
+
+
+    /* Hide less important columns */
+
+    .messages-table th:nth-child(4),
+    .messages-table td:nth-child(4),
+
+    .messages-table th:nth-child(5),
+    .messages-table td:nth-child(5),
+
+    .messages-table th:nth-child(6),
+    .messages-table td:nth-child(6),
+
+    .messages-table th:nth-child(7),
+    .messages-table td:nth-child(7) {
+        display: none;
+    }
+
+
+    .messages-table th,
+    .messages-table td {
+        padding: 12px 8px;
+        font-size: 11px;
+    }
+
+
+    .messages-table th:nth-child(1),
+    .messages-table td:nth-child(1) {
+        width: 10%;
+    }
+
+
+    .messages-table th:nth-child(2),
+    .messages-table td:nth-child(2) {
+        width: 35%;
+    }
+
+
+    .messages-table th:nth-child(3),
+    .messages-table td:nth-child(3) {
+        width: 55%;
+    }
+
+
+    .message-name {
+        min-width: 0;
+        gap: 6px;
+    }
+
+
+    .message-icon {
+        width: 30px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+
+    .message-name span {
+        font-size: 11px;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+
+    .messages-table td:nth-child(3) {
+        word-break: break-word;
+    }
+
+}

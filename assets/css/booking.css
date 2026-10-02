@@ -1,0 +1,879 @@
+/* =========================================================
+   EVENT CRAFTERS - BOOKING PAGE
+   Premium Dark Theme
+========================================================= */
+
+.booking-page {
+    min-height: 100vh;
+    padding: 70px 6% 100px;
+    background: #080c1b;
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   BOOKING CONTAINER
+========================================================= */
+
+.booking-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* =========================================================
+   PAGE HEADER
+========================================================= */
+
+.booking-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.booking-header span {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #35D6FF;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.booking-header h1 {
+    margin: 0 0 12px;
+    color: #ffffff;
+    font-family: "Cinzel", serif;
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.booking-header p {
+    margin: 0;
+    color: #9aa3b8;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   EVENT INFORMATION
+========================================================= */
+
+.booking-event-card {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    overflow: hidden;
+    margin-bottom: 35px;
+    background: rgba(17, 24, 43, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.booking-event-image {
+    min-height: 300px;
+}
+
+.booking-event-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    display: block;
+    object-fit: cover;
+    filter: none;
+}
+
+.booking-event-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 35px;
+}
+
+.booking-event-info .event-category {
+    margin-bottom: 10px;
+    color: #35D6FF;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.booking-event-info h2 {
+    margin: 0 0 18px;
+    color: #ffffff;
+    font-family: "Cinzel", serif;
+    font-size: 30px;
+}
+
+.booking-event-info p {
+    margin: 7px 0;
+    color: #b3bacb;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+
+.booking-event-info p i {
+    width: 22px;
+    color: #9B5DE5;
+}
+
+.booking-event-price {
+    margin-top: 20px;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.booking-event-price span {
+    color: #9aa3b8;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   BOOKING FORM
+========================================================= */
+
+.booking-form-card {
+    padding: 35px;
+    margin-bottom: 30px;
+    background: rgba(17, 24, 43, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+}
+
+.booking-section {
+    margin-bottom: 38px;
+}
+
+.booking-section:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.selection-heading {
+    margin-bottom: 22px;
+}
+
+.selection-heading span {
+    display: block;
+    margin-bottom: 6px;
+    color: #35D6FF;
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.selection-heading h2 {
+    margin: 0;
+    color: #ffffff;
+    font-family: "Cinzel", serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.selection-heading p {
+    margin: 7px 0 0;
+    color: #8f98ad;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   FORM GROUP
+========================================================= */
+
+.booking-form-group {
+    margin-bottom: 22px;
+}
+
+.booking-form-group label {
+    display: block;
+    margin-bottom: 9px;
+    color: #dfe4ef;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.booking-form-group input,
+.booking-form-group select,
+.booking-form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 15px;
+    color: #ffffff;
+    background: #0d1325;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 10px;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.booking-form-group input:focus,
+.booking-form-group select:focus,
+.booking-form-group textarea:focus {
+    border-color: #35D6FF;
+    box-shadow: 0 0 0 3px rgba(53, 214, 255, 0.08);
+}
+
+.booking-form-group textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.booking-form-group input::placeholder,
+.booking-form-group textarea::placeholder {
+    color: #687188;
+}
+
+
+/* =========================================================
+   FORM ROW
+========================================================= */
+
+.booking-form-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+/* =========================================================
+   PERSON INPUT
+========================================================= */
+
+.person-input {
+    position: relative;
+}
+
+.person-input input {
+    padding-right: 70px;
+}
+
+.person-label {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: #7f899f;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   FOOD SELECTION - HORIZONTAL SCROLLER
+========================================================= */
+
+.food-selection {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 8px 4px 22px;
+    scroll-behavior: smooth;
+}
+
+/* Scrollbar */
+
+.food-selection::-webkit-scrollbar {
+    height: 8px;
+}
+
+.food-selection::-webkit-scrollbar-track {
+    background: #0b1020;
+    border-radius: 20px;
+}
+
+.food-selection::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+        90deg,
+        #9B5DE5,
+        #35D6FF
+    );
+    border-radius: 20px;
+}
+
+.food-selection::-webkit-scrollbar-thumb:hover {
+    background: #35D6FF;
+}
+
+
+/* =========================================================
+   FOOD CARD
+========================================================= */
+
+.food-card {
+    position: relative;
+    flex: 0 0 280px;
+    width: 280px;
+    min-width: 280px;
+    overflow: hidden;
+    background: #0d1325;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    transition: 0.35s ease;
+}
+
+.food-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(53, 214, 255, 0.55);
+
+    box-shadow:
+        0 12px 30px rgba(53, 214, 255, 0.10),
+        0 5px 20px rgba(155, 93, 229, 0.08);
+}
+
+
+/* =========================================================
+   ROUND CHECKBOX
+========================================================= */
+
+.food-card input[type="checkbox"] {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    z-index: 10;
+
+    width: 22px;
+    height: 22px;
+
+    margin: 0;
+    padding: 0;
+
+    appearance: none;
+    -webkit-appearance: none;
+
+    background: #080c1b;
+
+    border: 2px solid #ffffff;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+
+/* Checkbox hover */
+
+.food-card input[type="checkbox"]:hover {
+    border-color: #35D6FF;
+    box-shadow: 0 0 10px rgba(53, 214, 255, 0.35);
+}
+
+
+/* Checked */
+
+.food-card input[type="checkbox"]:checked {
+    background: linear-gradient(
+        135deg,
+        #9B5DE5,
+        #35D6FF
+    );
+
+    border-color: #35D6FF;
+
+    box-shadow:
+        0 0 12px rgba(53, 214, 255, 0.35);
+}
+
+
+/* Tick */
+
+.food-card input[type="checkbox"]:checked::after {
+    content: "✓";
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -54%);
+
+    color: #ffffff;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   FOOD IMAGE
+========================================================= */
+
+.food-image {
+    width: 100%;
+    height: 190px;
+    overflow: hidden;
+}
+
+.food-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    filter: none;
+
+    transition: 0.4s ease;
+}
+
+.food-card:hover .food-image img {
+    transform: scale(1.06);
+}
+
+
+/* =========================================================
+   FOOD CONTENT
+========================================================= */
+
+.food-content {
+    padding: 18px;
+}
+
+.food-content h3 {
+    margin: 0 0 7px;
+
+    color: #ffffff;
+
+    font-family: "Cinzel", serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.food-content p {
+    min-height: 38px;
+
+    margin: 0 0 12px;
+
+    color: #8993aa;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.food-price {
+    color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.food-price span {
+    color: #8b94a8;
+
+    font-size: 11px;
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 576px) {
+
+    .food-selection {
+        gap: 15px;
+        padding-bottom: 18px;
+    }
+
+    .food-card {
+        flex: 0 0 250px;
+        width: 250px;
+        min-width: 250px;
+    }
+
+    .food-image {
+        height: 170px;
+    }
+
+}
+
+
+/* =========================================================
+   COUPON SECTION
+========================================================= */
+
+.coupon-section {
+    padding: 25px;
+    background: rgba(13, 19, 37, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 15px;
+}
+
+.coupon-form {
+    display: flex;
+    gap: 10px;
+}
+
+.coupon-form input {
+    flex: 1;
+    min-width: 0;
+    padding: 13px 15px;
+    color: #ffffff;
+    background: #080c1b;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 9px;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+}
+
+.coupon-form input:focus {
+    border-color: #35D6FF;
+}
+
+.coupon-form button {
+    padding: 13px 22px;
+    color: #ffffff;
+    background: linear-gradient(
+        135deg,
+        #9B5DE5,
+        #35D6FF
+    );
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.coupon-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(53, 214, 255, 0.20);
+}
+
+.coupon-message {
+    margin-top: 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   TOTAL SUMMARY
+========================================================= */
+
+.booking-total-card {
+    padding: 30px;
+    margin-top: 30px;
+    background: linear-gradient(
+        135deg,
+        rgba(155, 93, 229, 0.10),
+        rgba(53, 214, 255, 0.07)
+    );
+    border: 1px solid rgba(53, 214, 255, 0.15);
+    border-radius: 18px;
+}
+
+.total-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 11px 0;
+    color: #aeb6c9;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.total-row:last-child {
+    border-bottom: none;
+}
+
+.total-row strong {
+    color: #ffffff;
+}
+
+.discount-row {
+    color: #35D6FF;
+}
+
+.grand-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.grand-total span {
+    color: #ffffff;
+    font-family: "Cinzel", serif;
+    font-size: 20px;
+}
+
+.grand-total strong {
+    color: #35D6FF;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+}
+
+
+/* =========================================================
+   CONFIRM BOOKING BUTTON
+========================================================= */
+
+.confirm-booking-btn {
+    width: 100%;
+    padding: 15px 25px;
+    margin-top: 25px;
+    color: #ffffff;
+    background: linear-gradient(
+        135deg,
+        #9B5DE5,
+        #35D6FF
+    );
+    border: none;
+    border-radius: 11px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    transition: 0.35s ease;
+}
+
+.confirm-booking-btn:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 12px 30px rgba(155, 93, 229, 0.25),
+        0 5px 20px rgba(53, 214, 255, 0.15);
+}
+
+.confirm-booking-btn i {
+    margin-right: 8px;
+}
+
+
+/* =========================================================
+   BACK BUTTON
+========================================================= */
+
+.booking-back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 30px;
+    color: #35D6FF;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.booking-back-btn:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.booking-back-btn i {
+    transition: 0.3s ease;
+}
+
+.booking-back-btn:hover i {
+    transform: translateX(-4px);
+}
+
+
+/* =========================================================
+   LOGIN MESSAGE
+========================================================= */
+
+.booking-login-message {
+    max-width: 600px;
+    padding: 40px;
+    margin: 80px auto;
+    text-align: center;
+    background: #11182b;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+}
+
+.booking-login-message i {
+    margin-bottom: 18px;
+    color: #35D6FF;
+    font-size: 42px;
+}
+
+.booking-login-message h2 {
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-family: "Cinzel", serif;
+}
+
+.booking-login-message p {
+    margin-bottom: 25px;
+    color: #929bb0;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+
+.booking-login-message a {
+    display: inline-block;
+    padding: 12px 25px;
+    color: #ffffff;
+    background: linear-gradient(
+        135deg,
+        #9B5DE5,
+        #35D6FF
+    );
+    border-radius: 9px;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .booking-page {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .booking-event-card {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-event-image {
+        height: 300px;
+    }
+
+    .booking-event-image img {
+        min-height: 300px;
+    }
+
+    .food-selection {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .booking-header h1 {
+        font-size: 34px;
+    }
+
+    .booking-form-card {
+        padding: 25px;
+    }
+
+    .booking-form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .food-selection {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-event-info {
+        padding: 25px;
+    }
+
+    .booking-event-info h2 {
+        font-size: 25px;
+    }
+
+    .coupon-form {
+        flex-direction: column;
+    }
+
+    .coupon-form button {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .booking-page {
+        padding: 50px 5% 70px;
+    }
+
+    .booking-header {
+        margin-bottom: 35px;
+    }
+
+    .booking-header h1 {
+        font-size: 29px;
+    }
+
+    .booking-header p {
+        font-size: 13px;
+    }
+
+    .booking-form-card {
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    .booking-event-card {
+        border-radius: 15px;
+    }
+
+    .booking-event-image {
+        height: 230px;
+        min-height: 230px;
+    }
+
+    .booking-event-image img {
+        min-height: 230px;
+    }
+
+    .booking-event-info {
+        padding: 22px;
+    }
+
+    .selection-heading h2 {
+        font-size: 21px;
+    }
+
+    .booking-total-card {
+        padding: 22px;
+    }
+
+    .grand-total span {
+        font-size: 17px;
+    }
+
+    .grand-total strong {
+        font-size: 21px;
+    }
+}

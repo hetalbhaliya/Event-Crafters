@@ -1,0 +1,326 @@
+/* =========================================
+   ABOUT PAGE
+========================================= */
+
+
+/* =========================================
+   ABOUT HEADER
+========================================= */
+
+.about-header{
+    padding:70px 6% 35px;
+
+    text-align:center;
+}
+
+.about-header h1{
+    font-family:'Cinzel',serif;
+
+    font-size:42px;
+
+    margin-bottom:12px;
+}
+
+.about-header p{
+    color:#aeb5c7;
+
+    font-size:15px;
+}
+
+
+/* =========================================
+   ABOUT INTRO
+========================================= */
+
+.about-intro{
+    padding:40px 6% 90px;
+}
+
+.about-container{
+    width:100%;
+    max-width:1200px;
+
+    margin:auto;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:60px;
+}
+
+
+/* IMAGE */
+
+.about-image{
+    flex:1;
+
+    overflow:hidden;
+
+    border-radius:22px;
+}
+
+.about-image img{
+    width:100%;
+    height:420px;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:.5s;
+}
+
+.about-image:hover img{
+    transform:scale(1.05);
+}
+
+
+/* CONTENT */
+
+.about-content{
+    flex:1;
+}
+
+.about-tag{
+    display:inline-block;
+
+    color:#35d6ff;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+    margin-bottom:15px;
+}
+
+.about-content h2{
+    font-family:'Cinzel',serif;
+
+    font-size:34px;
+
+    line-height:1.4;
+
+    margin-bottom:20px;
+}
+
+.about-content p{
+    color:#aeb5c7;
+
+    font-size:14px;
+
+    line-height:26px;
+
+    margin-bottom:15px;
+}
+
+
+/* =========================================
+   MISSION
+========================================= */
+
+.mission-section{
+    padding:90px 6%;
+
+    background:#0d1425;
+}
+
+.mission-grid{
+    width:100%;
+    max-width:1100px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:25px;
+}
+
+.mission-card{
+    padding:35px 25px;
+
+    text-align:center;
+
+    background:#11182b;
+
+    border:1px solid
+        rgba(53,214,255,.10);
+
+    border-radius:18px;
+
+    transition:.4s;
+}
+
+.mission-card i{
+    font-size:36px;
+
+    color:#35d6ff;
+
+    margin-bottom:18px;
+}
+
+.mission-card h3{
+    font-size:20px;
+
+    margin-bottom:12px;
+}
+
+.mission-card p{
+    color:#aeb5c7;
+
+    font-size:13px;
+
+    line-height:24px;
+}
+
+.mission-card:hover{
+    transform:translateY(-8px);
+
+    border-color:#35d6ff;
+
+    box-shadow:
+        0 15px 35px
+        rgba(53,214,255,.12);
+}
+
+
+/* =========================================
+   OFFER SECTION
+========================================= */
+
+.offer-section{
+    padding:90px 6%;
+}
+
+.offer-grid{
+    width:100%;
+    max-width:1100px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:22px;
+}
+
+.offer-card{
+    padding:30px 20px;
+
+    text-align:center;
+
+    background:#11182b;
+
+    border-radius:18px;
+
+    border:1px solid
+        rgba(255,255,255,.07);
+
+    transition:.4s;
+}
+
+.offer-card i{
+    font-size:32px;
+
+    color:#9b5de5;
+
+    margin-bottom:18px;
+}
+
+.offer-card h3{
+    font-size:17px;
+
+    margin-bottom:10px;
+}
+
+.offer-card p{
+    color:#aeb5c7;
+
+    font-size:12px;
+
+    line-height:22px;
+}
+
+.offer-card:hover{
+    transform:translateY(-7px);
+
+    border-color:#9b5de5;
+
+    box-shadow:
+        0 12px 30px
+        rgba(155,93,229,.12);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media(max-width:992px){
+
+    .about-container{
+        flex-direction:column;
+
+        gap:40px;
+    }
+
+    .about-image,
+    .about-content{
+        width:100%;
+    }
+
+    .about-image img{
+        height:380px;
+    }
+
+    .mission-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .offer-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+}
+
+
+@media(max-width:576px){
+
+    .about-header{
+        padding:50px 5% 25px;
+    }
+
+    .about-header h1{
+        font-size:31px;
+    }
+
+    .about-intro,
+    .mission-section,
+    .offer-section{
+        padding-left:5%;
+        padding-right:5%;
+    }
+
+    .about-content h2{
+        font-size:27px;
+    }
+
+    .about-image img{
+        height:280px;
+    }
+
+    .mission-grid,
+    .offer-grid{
+        grid-template-columns:1fr;
+    }
+
+}
